@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-25T18:13:31.998723+08:00",
+  "status": "PASS_RECOVERABLE_RUNTIME_STOP",
+  "checkpoint": "/data/wangyuqi_intern26/ssf_runs/phaseG_execution_20261024_225742/training/baseline/checkpoints/emergency_000016.pt",
+  "checkpoint_SHA256": "115729b0b8d753dd021b0013184c6ccff726ef4cfb9549e2820cbeefbe73e92b",
+  "bytes": 34066565321,
+  "counts": {
+    "outer": 16,
+    "G": 4,
+    "C": 16,
+    "EMA_initialized": false,
+    "EMA_updates": 0
+  },
+  "accepted_global_data_cursor": 1280,
+  "accumulation_position": 0,
+  "next_native_phase": "C",
+  "generator_tensor_keys": 825,
+  "critic_tensor_keys": 825,
+  "optimizers": {
+    "G": {
+      "optimizer_parameter_states": 825,
+      "step_values": [
+        4.0
+      ],
+      "moment_dtypes": "FP32/FP32",
+      "param_groups": 1
+    },
+    "C": {
+      "optimizer_parameter_states": 825,
+      "step_values": [
+        16.0
+      ],
+      "moment_dtypes": "FP32/FP32",
+      "param_groups": 1
+    }
+  },
+  "all_rank_sampler_state": [
+    {
+      "seed": 0,
+      "shuffle": true,
+      "drop_last": true,
+      "rank": 0,
+      "world_size": 2,
+      "dataset_size": 248221,
+      "accepted_rank_cursor": 640,
+      "accepted_global_cursor": 1280,
+      "next_eight_indices": [
+        152749,
+        190293,
+        174356,
+        197417,
+        66682,
+        222030,
+        107133,
+        125283
+      ]
+    },
+    {
+      "seed": 0,
+      "shuffle": true,
+      "drop_last": true,
+      "rank": 1,
+      "world_size": 2,
+      "dataset_size": 248221,
+      "accepted_rank_cursor": 640,
+      "accepted_global_cursor": 1280,
+      "next_eight_indices": [
+        65900,
+        208415,
+        32961,
+        217386,
+        69659,
+        223761,
+        119954,
+        197077
+      ]
+    }
+  ],
+  "all_rank_RNG_states_retained": true,
+  "EMA_correctly_not_initialized": true,
+  "readback_integrity_basis": "producer fsync+SHA256+complete tree-hash readback; this audit checks checkpoint metadata/counters/mappings/moments without another whole-file byte rescan",
+  "frozen_source_and_runtime_code_unchanged": true,
+  "worker_finished": [
+    {
+      "success": false,
+      "pid": 3169256,
+      "at": 1792923099.2488072,
+      "arm": "baseline",
+      "process_group_cleanup_complete": true
+    },
+    {
+      "success": false,
+      "pid": 3169257,
+      "at": 1792923099.1768248,
+      "arm": "baseline",
+      "process_group_cleanup_complete": true
+    }
+  ],
+  "intentional_stop_worker_success_false_is_expected": true,
+  "training_GPUh_used": 12.795712538560231,
+  "full600_training_complete": false,
+  "health_PASS": null,
+  "SSF_started": false,
+  "new_B4_contract_approval": "PENDING_ACTUAL_USER_CHOICE"
+}

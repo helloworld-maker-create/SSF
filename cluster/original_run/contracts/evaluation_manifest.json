@@ -1,0 +1,973 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PROPOSAL_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:40:39.320669+08:00",
+  "execution_authorized": false,
+  "panel": {
+    "selection": "metadata and fixed hash only; no outcome-based choice",
+    "strata": [
+      [
+        "human_action",
+        8
+      ],
+      [
+        "subject_consistency",
+        16
+      ],
+      [
+        "background_consistency",
+        6
+      ],
+      [
+        "object_class",
+        6
+      ],
+      [
+        "multiple_objects",
+        6
+      ],
+      [
+        "overall_consistency",
+        6
+      ]
+    ],
+    "source": "/data/wangyuqi_intern26/ssf_runs/vbench_full_5s_20261011_160228/prompt_suite.json",
+    "source_SHA256": "257dcdc2b0ad6b46543ef291533443b43b0dc28c044cfeb1dbf3512dc8ec5fe3",
+    "old_panel": "/data/wangyuqi_intern26/ssf_runs/phaseF_reader_credit_20261023_143148/contracts/panel.json",
+    "old_panel_SHA256": "d6de96033e031d7c924192d9d10601b1f7efa8b87ad346efacd908225b109ed1",
+    "key": "SSF_PhaseG_panel_v3|2027|dimension|prompt",
+    "priority": "existing96 member, then key SHA256, then original source_index; deduplicate exact text",
+    "preserve_all_official_memberships": true,
+    "prompts": [
+      {
+        "prompt": "A person is skateboarding",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is skateboarding-0.mp4",
+        "source_index": 169,
+        "prompt_id": "p0169-2f9950b3d9a7",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is trimming or shaving beard",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is trimming or shaving beard-0.mp4",
+        "source_index": 216,
+        "prompt_id": "p0216-167795b66b8b",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is catching or throwing frisbee",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is catching or throwing frisbee-0.mp4",
+        "source_index": 187,
+        "prompt_id": "p0187-8671e9608a72",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is filling eyebrows",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is filling eyebrows-0.mp4",
+        "source_index": 190,
+        "prompt_id": "p0190-064bf7235ebe",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is crawling baby",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is crawling baby-0.mp4",
+        "source_index": 227,
+        "prompt_id": "p0227-6232afce1a50",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is ironing",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is ironing-0.mp4",
+        "source_index": 213,
+        "prompt_id": "p0213-adcfbac10db2",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is doing aerobics",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is doing aerobics-0.mp4",
+        "source_index": 233,
+        "prompt_id": "p0233-a6f9a3944074",
+        "selection_stratum": "human_action",
+        "reused_CD": false
+      },
+      {
+        "prompt": "A person is playing flute",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is playing flute-0.mp4",
+        "source_index": 171,
+        "prompt_id": "p0171-16d1773ffba9",
+        "selection_stratum": "human_action",
+        "reused_CD": false
+      },
+      {
+        "prompt": "a sheep taking a peaceful walk",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a sheep taking a peaceful walk-0.mp4",
+        "source_index": 311,
+        "prompt_id": "p0311-51bd21fba64c",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "an airplane accelerating to gain speed",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "an airplane accelerating to gain speed-0.mp4",
+        "source_index": 280,
+        "prompt_id": "p0280-0bd4049c994f",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a truck turning a corner",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a truck turning a corner-0.mp4",
+        "source_index": 287,
+        "prompt_id": "p0287-d58e7254d5a7",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a bird soaring gracefully in the sky",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a bird soaring gracefully in the sky-0.mp4",
+        "source_index": 295,
+        "prompt_id": "p0295-1a58efa8f860",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "an elephant running to join a herd of its kind",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "an elephant running to join a herd of its kind-0.mp4",
+        "source_index": 318,
+        "prompt_id": "p0318-d10846716eff",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a bus accelerating to gain speed",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a bus accelerating to gain speed-0.mp4",
+        "source_index": 283,
+        "prompt_id": "p0283-425de634994c",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "an elephant taking a peaceful walk",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "an elephant taking a peaceful walk-0.mp4",
+        "source_index": 317,
+        "prompt_id": "p0317-d9474a6adddc",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a bicycle leaning against a tree",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a bicycle leaning against a tree-0.mp4",
+        "source_index": 264,
+        "prompt_id": "p0264-7785df0782f0",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a bus turning a corner",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a bus turning a corner-0.mp4",
+        "source_index": 281,
+        "prompt_id": "p0281-badab853ec7f",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a person walking in the snowstorm",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a person walking in the snowstorm-0.mp4",
+        "source_index": 261,
+        "prompt_id": "p0261-3c3bf0c255e3",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a horse galloping across an open field",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a horse galloping across an open field-0.mp4",
+        "source_index": 307,
+        "prompt_id": "p0307-ba3272344bbb",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a motorcycle turning a corner",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a motorcycle turning a corner-0.mp4",
+        "source_index": 273,
+        "prompt_id": "p0273-688140a623ac",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a cat playing in park",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a cat playing in park-0.mp4",
+        "source_index": 299,
+        "prompt_id": "p0299-e25884d63f04",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": false
+      },
+      {
+        "prompt": "a person eating a burger",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a person eating a burger-0.mp4",
+        "source_index": 260,
+        "prompt_id": "p0260-c26b68f46a74",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": false
+      },
+      {
+        "prompt": "a motorcycle gliding through a snowy field",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a motorcycle gliding through a snowy field-0.mp4",
+        "source_index": 275,
+        "prompt_id": "p0275-c7b57f9ca6de",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": false
+      },
+      {
+        "prompt": "an airplane taking off",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "an airplane taking off-0.mp4",
+        "source_index": 278,
+        "prompt_id": "p0278-2ce14380cdaa",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": false
+      },
+      {
+        "prompt": "shower",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "shower-0.mp4",
+        "source_index": 842,
+        "prompt_id": "p0842-528159b45697",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "hospital",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "hospital-0.mp4",
+        "source_index": 815,
+        "prompt_id": "p0815-8afe3c83decf",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "parking lot",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "parking lot-0.mp4",
+        "source_index": 835,
+        "prompt_id": "p0835-847fd46115c9",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "football field",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "football field-0.mp4",
+        "source_index": 806,
+        "prompt_id": "p0806-aeaab0431f98",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "baseball stadium",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "baseball stadium-0.mp4",
+        "source_index": 846,
+        "prompt_id": "p0846-e43cd107d713",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "mansion",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "mansion-0.mp4",
+        "source_index": 825,
+        "prompt_id": "p0825-30de4f96dcff",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a spoon",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a spoon-0.mp4",
+        "source_index": 373,
+        "prompt_id": "p0373-1736abb91ae7",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a dog",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a dog-0.mp4",
+        "source_index": 345,
+        "prompt_id": "p0345-7dbdf68ac0bb",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a truck",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a truck-0.mp4",
+        "source_index": 336,
+        "prompt_id": "p0336-be1e12420ef0",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a bicycle",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a bicycle-0.mp4",
+        "source_index": 330,
+        "prompt_id": "p0330-99511b7402c1",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a keyboard",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a keyboard-0.mp4",
+        "source_index": 394,
+        "prompt_id": "p0394-5107ba0d22f4",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "an airplane",
+        "dims": [
+          "object_class"
+        ],
+        "video": "an airplane-0.mp4",
+        "source_index": 333,
+        "prompt_id": "p0333-e4a02badaa19",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a laptop and a remote",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a laptop and a remote-0.mp4",
+        "source_index": 89,
+        "prompt_id": "p0089-1b15c9f670c2",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a tv and a laptop",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a tv and a laptop-0.mp4",
+        "source_index": 88,
+        "prompt_id": "p0088-e563f7c8d6da",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a snowboard and a sports ball",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a snowboard and a sports ball-0.mp4",
+        "source_index": 105,
+        "prompt_id": "p0105-6742c457edd6",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a frisbee and skis",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a frisbee and skis-0.mp4",
+        "source_index": 103,
+        "prompt_id": "p0103-ce607f55bc00",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "broccoli and a backpack",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "broccoli and a backpack-0.mp4",
+        "source_index": 140,
+        "prompt_id": "p0140-7897ddd92854",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a couch and a potted plant",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a couch and a potted plant-0.mp4",
+        "source_index": 86,
+        "prompt_id": "p0086-760a08829a8e",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a shark is swimming in the ocean.",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "a shark is swimming in the ocean.-0.mp4",
+        "source_index": 703,
+        "prompt_id": "p0703-c38c96c54721",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "The bund Shanghai, oil painting",
+        "dims": [
+          "aesthetic_quality",
+          "appearance_style",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "The bund Shanghai, oil painting-0.mp4",
+        "source_index": 503,
+        "prompt_id": "p0503-4d31eaf07c77",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "Pacific coast, carmel by the sea ocean and waves.",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "Pacific coast, carmel by the sea ocean and waves.-0.mp4",
+        "source_index": 727,
+        "prompt_id": "p0727-a0e3924c83db",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A panda cooking in the kitchen",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "A panda cooking in the kitchen-0.mp4",
+        "source_index": 759,
+        "prompt_id": "p0759-2fa35850d017",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "Gwen Stacy reading a book",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "Gwen Stacy reading a book-0.mp4",
+        "source_index": 744,
+        "prompt_id": "p0744-054d64d4169a",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background-0.mp4",
+        "source_index": 748,
+        "prompt_id": "p0748-fb77a15b0930",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      }
+    ],
+    "n": 48,
+    "prompt_ids_SHA256": "cda978741bd00b493dfe48787fb30a0f42d717988e1dc90a517b7c4a7ae0d2db",
+    "canonical_rows_SHA256": "755b879771c4fd29b6599f93d5970daddee0c103b809b306aaf00710cda4cd2a",
+    "canonical_encoding": "JSON sort_keys=True,ensure_ascii=False,separators=(comma,colon)",
+    "compatible_CD_members": 42
+  },
+  "monitor": {
+    "prompts": [
+      {
+        "prompt": "a sheep taking a peaceful walk",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a sheep taking a peaceful walk-0.mp4",
+        "source_index": 311,
+        "prompt_id": "p0311-51bd21fba64c",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a truck turning a corner",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a truck turning a corner-0.mp4",
+        "source_index": 287,
+        "prompt_id": "p0287-d58e7254d5a7",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "football field",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "football field-0.mp4",
+        "source_index": 806,
+        "prompt_id": "p0806-aeaab0431f98",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a dog",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a dog-0.mp4",
+        "source_index": 345,
+        "prompt_id": "p0345-7dbdf68ac0bb",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a frisbee and skis",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a frisbee and skis-0.mp4",
+        "source_index": 103,
+        "prompt_id": "p0103-ce607f55bc00",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is skateboarding",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is skateboarding-0.mp4",
+        "source_index": 169,
+        "prompt_id": "p0169-2f9950b3d9a7",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is catching or throwing frisbee",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is catching or throwing frisbee-0.mp4",
+        "source_index": 187,
+        "prompt_id": "p0187-8671e9608a72",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A panda cooking in the kitchen",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "A panda cooking in the kitchen-0.mp4",
+        "source_index": 759,
+        "prompt_id": "p0759-2fa35850d017",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      }
+    ],
+    "n": 8,
+    "ids_SHA256": "38aa3236e145b17ad8b219a4e85d2a30e21ff1698f522aefadbfc30be979e268",
+    "selection": "frozen prior conversation v3; broad observable actions, not old outcomes",
+    "action_prompt_ids": [
+      "p0311-51bd21fba64c",
+      "p0287-d58e7254d5a7",
+      "p0169-2f9950b3d9a7",
+      "p0187-8671e9608a72"
+    ]
+  },
+  "inference_seeds": [
+    2026,
+    2027
+  ],
+  "primary_endpoint": {
+    "outer": 600,
+    "weight": "EMA",
+    "contrast": "SSF minus Baseline"
+  },
+  "secondary_endpoint": {
+    "outer": 600,
+    "weight": "raw",
+    "no_winner_selection": true
+  },
+  "settings": {
+    "width": 832,
+    "height": 480,
+    "video_frames": 81,
+    "fps": 16,
+    "latent_frames": 21,
+    "chunk_latent_frames": 3,
+    "total_chunks": 7,
+    "local_attn_size": 18,
+    "sink_size": 0,
+    "actual_denoising": [
+      1000.0,
+      937.5,
+      833.3333129882812,
+      625.0
+    ],
+    "checkpointing": false,
+    "encoding": "lossless RGB; unchanged VAE and native4step renderer"
+  },
+  "configured_denoising": [
+    1000,
+    750,
+    500,
+    250
+  ],
+  "text": "unaltered original official prompt for MVP; detailed only for separate reference",
+  "paired_initial_and_all_renoise": true,
+  "metrics": [
+    "subject_consistency",
+    "background_consistency",
+    "object_class",
+    "multiple_objects",
+    "human_action",
+    "dynamic_degree",
+    "motion_smoothness",
+    "imaging_quality",
+    "overall_consistency"
+  ],
+  "official_membership_ids": {
+    "subject_consistency": [
+      "p0311-51bd21fba64c",
+      "p0280-0bd4049c994f",
+      "p0287-d58e7254d5a7",
+      "p0295-1a58efa8f860",
+      "p0318-d10846716eff",
+      "p0283-425de634994c",
+      "p0317-d9474a6adddc",
+      "p0264-7785df0782f0",
+      "p0281-badab853ec7f",
+      "p0261-3c3bf0c255e3",
+      "p0307-ba3272344bbb",
+      "p0273-688140a623ac",
+      "p0299-e25884d63f04",
+      "p0260-c26b68f46a74",
+      "p0275-c7b57f9ca6de",
+      "p0278-2ce14380cdaa"
+    ],
+    "background_consistency": [
+      "p0842-528159b45697",
+      "p0815-8afe3c83decf",
+      "p0835-847fd46115c9",
+      "p0806-aeaab0431f98",
+      "p0846-e43cd107d713",
+      "p0825-30de4f96dcff"
+    ],
+    "object_class": [
+      "p0373-1736abb91ae7",
+      "p0345-7dbdf68ac0bb",
+      "p0336-be1e12420ef0",
+      "p0330-99511b7402c1",
+      "p0394-5107ba0d22f4",
+      "p0333-e4a02badaa19"
+    ],
+    "multiple_objects": [
+      "p0089-1b15c9f670c2",
+      "p0088-e563f7c8d6da",
+      "p0105-6742c457edd6",
+      "p0103-ce607f55bc00",
+      "p0140-7897ddd92854",
+      "p0086-760a08829a8e"
+    ],
+    "human_action": [
+      "p0169-2f9950b3d9a7",
+      "p0216-167795b66b8b",
+      "p0187-8671e9608a72",
+      "p0190-064bf7235ebe",
+      "p0227-6232afce1a50",
+      "p0213-adcfbac10db2",
+      "p0233-a6f9a3944074",
+      "p0171-16d1773ffba9"
+    ],
+    "dynamic_degree": [
+      "p0311-51bd21fba64c",
+      "p0280-0bd4049c994f",
+      "p0287-d58e7254d5a7",
+      "p0295-1a58efa8f860",
+      "p0318-d10846716eff",
+      "p0283-425de634994c",
+      "p0317-d9474a6adddc",
+      "p0264-7785df0782f0",
+      "p0281-badab853ec7f",
+      "p0261-3c3bf0c255e3",
+      "p0307-ba3272344bbb",
+      "p0273-688140a623ac",
+      "p0299-e25884d63f04",
+      "p0260-c26b68f46a74",
+      "p0275-c7b57f9ca6de",
+      "p0278-2ce14380cdaa"
+    ],
+    "motion_smoothness": [
+      "p0311-51bd21fba64c",
+      "p0280-0bd4049c994f",
+      "p0287-d58e7254d5a7",
+      "p0295-1a58efa8f860",
+      "p0318-d10846716eff",
+      "p0283-425de634994c",
+      "p0317-d9474a6adddc",
+      "p0264-7785df0782f0",
+      "p0281-badab853ec7f",
+      "p0261-3c3bf0c255e3",
+      "p0307-ba3272344bbb",
+      "p0273-688140a623ac",
+      "p0299-e25884d63f04",
+      "p0260-c26b68f46a74",
+      "p0275-c7b57f9ca6de",
+      "p0278-2ce14380cdaa"
+    ],
+    "imaging_quality": [
+      "p0703-c38c96c54721",
+      "p0503-4d31eaf07c77",
+      "p0727-a0e3924c83db",
+      "p0759-2fa35850d017",
+      "p0744-054d64d4169a",
+      "p0748-fb77a15b0930"
+    ],
+    "overall_consistency": [
+      "p0703-c38c96c54721",
+      "p0503-4d31eaf07c77",
+      "p0727-a0e3924c83db",
+      "p0759-2fa35850d017",
+      "p0744-054d64d4169a",
+      "p0748-fb77a15b0930"
+    ]
+  },
+  "no_temporal_flickering_official_members": true,
+  "no_missing_dimension_zero_fill": true,
+  "no_subset_official_Total": true,
+  "frame_difference": "existing11-frame RGB-mean gray MAE proxy,0..255; not direct motion or camera separation",
+  "human_action": {
+    "helper": "/data/wangyuqi_intern26/ssf_runs/goalB_20261014_095243/scripts/metric_filename_contract.py",
+    "helper_SHA256": "2ecafc65473c098ef824bf37f1db8f5fc5c3cfe4d9f436f523ecc7cba1feff92",
+    "protocol": "original official prompt spelling plus -0.mp4 aliases; actual source SHA/inode checked; original prompt-ID inputs preserved",
+    "installed_module": "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/human_action.py",
+    "installed_module_SHA256": "4cee71a1e09e0b2f7e1a8126300c9250be19e3866f49004c8b69b4a5a15e8945"
+  },
+  "generation_environment": {
+    "executable": "/data/tuyijing/anaconda3/envs/self/bin/python",
+    "python": "3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]",
+    "torch": "2.8.0+cu129",
+    "CUDA": "12.9",
+    "PYTHONNOUSERSITE": 1
+  },
+  "metric_environment": {
+    "python": "3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]",
+    "executable": "/data/tuyijing/anaconda3/envs/vbench2/bin/python",
+    "packages": {
+      "torch": "2.5.1",
+      "numpy": "1.26.3",
+      "vbench": "0.1.5"
+    },
+    "torch_runtime_version": "2.5.1+cu124",
+    "torch_CUDA": "12.4",
+    "numpy_runtime_version": "1.26.3",
+    "source": "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/__init__.py",
+    "PYTHONPATH_prefix": "/data/wangyuqi_intern26/repos/Self_Gradient_Forcing/d2_deps",
+    "PYTHONNOUSERSITE": 1
+  },
+  "metric_module_SHA256": {
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/subject_consistency.py": "55f5c9a3e5be543380a709b94712903fa67a76340c3c0cb2414ac090dbd1b78d",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/background_consistency.py": "7def92057819df0dad01c857eecf3b39b8b555c8cdfe881a672cc2b19dc226b4",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/temporal_flickering.py": "c2c892034d1652c9390f213308c18b77ae20a87bd52fc50a125294ce83af4e83",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/motion_smoothness.py": "df15c9bb078bcb514c2fcee62ffe5d497340a4ab0ea9a37abfe061adacd56664",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/dynamic_degree.py": "2e93d3a7af38bfbe459c19c9d127894f687424a0bc534dbf7e6571d17b24dff7",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/aesthetic_quality.py": "caf86008a3e56974524d286e5b968a31536e315005d0b20f06fae9d5d37da539",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/imaging_quality.py": "ac6c648cb4d5e82cd29c63be04977e9288c3540558cf12f979e66bef3e1f9e3a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/object_class.py": "8d4c4a7feee52503e3d27f8aba0ed467cbc356ed75da2598367b572237e05db2",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/multiple_objects.py": "fa5047aa560158f017e46dea3ae763ed083df08ece63e47f61a7ea4fc55be672",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/human_action.py": "4cee71a1e09e0b2f7e1a8126300c9250be19e3866f49004c8b69b4a5a15e8945",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/color.py": "03baffc12508fd7ce6c70a227d6794bbc7152c24ba2d2c447a816974466db3d7",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/spatial_relationship.py": "26f09a111dac904d1a92ae5bd1c332a029cebd22610d62376a09d7d634950270",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/scene.py": "f14c423710c812af2be953db619ed6e8b478acdc44f1df775815adfa30171965",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/temporal_style.py": "9f9e950efca4673721d0a07ea83137be9ebdc9aef2364f412300ba979beef57a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/appearance_style.py": "166b291abe55b0ac28ff4c937469e42cc2aa135c308ab06665518837956deb2a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/overall_consistency.py": "325beb4503699b08d441a467710240097c15c2267fe92dbed1ed8cdfaa96103e"
+  },
+  "metric_normalization": {
+    "path": "/data/tuyijing/LongLive/metrics/VBench/scripts/constant.py",
+    "sha256": "c265be4cb51f95257e0b9dfbcb95453d39edca47ee14cb3f7b11e6f20f165e17",
+    "panel_official_total_prohibited": true
+  },
+  "reuse_contract_source": "/data/wangyuqi_intern26/ssf_runs/phaseF_reader_credit_20261023_143148/contracts/evaluation_contract.json",
+  "reuse_contract_SHA256": "7b2868c7262c9ec16d1b28e23d694abde1bb338e698ba06f2a70b6b95ecf4cbe",
+  "model_video_counts": {
+    "normal": 664,
+    "cap_including_technical_model_retries": 800,
+    "by_stage": {
+      "A": 136,
+      "B": 256,
+      "C": 272
+    }
+  },
+  "intermediate": "8 monitor x2seed xraw/EMA at200/400; evaluation after checkpoint availability, not best-horizon selection",
+  "bypass": "only16 SSF600 EMA monitor videos; auxiliary, not a required win",
+  "view_only": {
+    "only_for_source_playback_incompatibility": true,
+    "not_metric_inputs": true,
+    "not_counted_as_new_model_samples": true,
+    "separate_count_and_storage_ledger": true,
+    "preserve_fps_frames_resolution": true,
+    "uniform_encoding_across_blind_items": true,
+    "original_SHA_and_transcode_settings_required": true,
+    "record_actual_viewed_version": true
+  }
+}

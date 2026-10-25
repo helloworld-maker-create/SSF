@@ -1,0 +1,234 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PROPOSAL_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:40:39.320669+08:00",
+  "execution_authorized": false,
+  "source_checkpoint": "/data/tuyijing/TTS/Self-Forcing/checkpoints/self_forcing_dmd.pt",
+  "required_weight_key": "generator_ema",
+  "State_enabled": false,
+  "prior_metadata_observation": {
+    "tensor_keys": 825,
+    "numel": 1418996800,
+    "dtype": "float32",
+    "top_keys": [
+      "generator_ema"
+    ],
+    "provenance": "previous conversation read-only FakeTensor header inspection; not repeated here"
+  },
+  "checkpoint_full_SHA256": null,
+  "identity_status": "PENDING_ACTUAL_LOAD_REVERIFICATION",
+  "detailed_source": {
+    "path": "/data/wangyuqi_intern26/repos/Self-Forcing/prompts/MovieGenVideoBench_extended.txt",
+    "SHA256": "50293c2717c8f2df5773154d4680c74e636ecb08eb4fe13cdce7357d0ab9d121",
+    "original_path": "/data/wangyuqi_intern26/repos/Self-Forcing/prompts/MovieGenVideoBench.txt",
+    "original_SHA256": "ae02a4bbebcb55067dbeea369e43d52a4817d57fd0ac223071b9aa236ac027c4",
+    "line_indices_zero_based": [
+      784,
+      705,
+      321,
+      796,
+      228,
+      537,
+      121,
+      976
+    ],
+    "rows": [
+      {
+        "prompt_id": "moviegen-0784",
+        "source_index": 784,
+        "prompt": "A panoramic shot moving left across a serene beach at sunrise, starting from the darkened shore and gradually transitioning to the brightening horizon. The early morning light casts long shadows and highlights the soft sand, while seagulls can be seen flying in the distance. Palm trees stand tall along the shoreline, their silhouettes adding depth to the scene. The background features a beautiful blend of orange, pink, and purple hues as the sun rises, casting a warm glow over the entire landscape. The camera angle provides a sweeping view, capturing the tranquil beauty of the moment.",
+        "original_prompt": "A pan left across a serene beach at sunrise, moving from the darkened shore to the brightening horizon.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0705",
+        "source_index": 705,
+        "prompt": "A softly focused photograph in a minimalist style, depicting a foam cushion being compressed under a heavy object. The cushion is initially squished, its edges curling inward, but then slowly regains its original shape as the object is lifted away. The background is a plain white surface, creating a stark contrast. The cushion appears smooth and slightly translucent, with subtle texture details visible. The camera angle is slightly elevated, capturing the transformation from compression to recovery in a dynamic sequence.",
+        "original_prompt": "A soft foam cushion being compressed under a heavy object, then gradually regaining its shape when the object is removed.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0321",
+        "source_index": 321,
+        "prompt": "A candid moment captured in a soft, natural light photograph of a little child yawning widely. The child has rosy cheeks and tousled brown hair, with large, curious eyes that gaze directly into the camera. They sit on a cozy wooden floor, surrounded by colorful toys and books. The background features a warm, inviting room with a soft rug and a few stuffed animals nearby. The yawn stretches the child's small face, revealing a hint of fatigue. The photo has a gentle, documentary style. A close-up shot with a slight tilt, capturing the child's entire body and the surrounding environment.",
+        "original_prompt": "A little child let out a big yawn",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0796",
+        "source_index": 796,
+        "prompt": "A panoramic view sweeping right across a field of tall grass swaying gently in the wind, with a setting sun casting a warm golden glow in the background. The grass blades catch the last rays of sunlight, creating a shimmering effect. The horizon is blurred, highlighting the contrast between the vibrant grass and the soft, fading sky. A low-angle shot capturing the dynamic movement of the grass and the serene beauty of the twilight.",
+        "original_prompt": "A pan right across a field of tall grass swaying gently in the wind, with a setting sun in the background.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0228",
+        "source_index": 228,
+        "prompt": "A candid moment captured in a realistic photo style, showing a young man with a slight Asian appearance, his cheeks flushed with embarrassment after tripping in public. He is dressed in casual clothes, wearing a light blue shirt and dark jeans, with a pair of sneakers on his feet. His hair is slightly messy, and he has a hand on his forehead, trying to cover his embarrassment. His posture is slightly bent, and his gaze is downward, avoiding eye contact with others. The background is a bustling city street, with people walking by and a few cars passing by. The photo has a soft, natural lighting effect, emphasizing the moment of the fall. A close-up shot from a low angle, capturing the man's face and the street scene in the background.",
+        "original_prompt": "The person's cheeks flushed with embarrassment as he tripped in public.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0537",
+        "source_index": 537,
+        "prompt": "A grand library in the style of a classic novel illustration, featuring towering bookshelves stretching up to the ceiling and winding spiral staircases leading to upper levels. People move quietly through the aisles, browsing through volumes and settling into cozy reading nooks. The lighting is warm and inviting, with soft shadows cast by the bookshelves. A few readers are engrossed in their books, some sitting on benches and others perched on plush armchairs. The background shows a richly detailed floor with ornate patterns, and the air is filled with the scent of old paper and ink. A medium shot with a slight overhead angle, capturing the peaceful atmosphere of the library.",
+        "original_prompt": "A grand library boasts towering bookshelves and spiral staircases, with people quietly moving through the aisles, browsing through volumes and settling into reading nooks.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0121",
+        "source_index": 121,
+        "prompt": "A surreal digital art piece depicting a majestic bird gently landing on the surface of a tranquil lake, transforming into a sleek fish mid-mutation. The bird has vibrant plumage, with long wings spread wide as it touches the water. As it transforms, its body elongates and turns silver, fins forming from its wings and legs. The fish retains some bird-like features, such as large eyes and a curved beak. The background showcases a serene lakeside, with soft ripples on the water and gentle sunlight casting a warm glow. The scene has a dreamy, ethereal quality, with a slight blur effect on the surroundings. A medium shot from a slightly elevated angle, capturing the transformation in motion.",
+        "original_prompt": "A bird landing on water and turning into a fish.",
+        "conditioning_variant": "existing_detailed_reference_only"
+      },
+      {
+        "prompt_id": "moviegen-0976",
+        "source_index": 976,
+        "prompt": "An old man in blue jeans and a white T-shirt takes a leisurely stroll along a bustling street in Mumbai, India, during a breathtaking sunset. He walks with a gentle sway, his weathered face reflecting the warm hues of the setting sun. His hands rest casually in his pockets, and he appears content and at peace. The background features a vibrant mix of colorful buildings, street vendors, and pedestrians, with the sky painted in shades of orange, pink, and purple. The photo has a nostalgic and documentary style, capturing the essence of a serene moment amidst the city's energy. A medium shot with a soft focus on the old man.",
+        "original_prompt": "an old man wearing blue jeans and a white t shirt taking a pleasant stroll in Mumbai India during a beautiful sunset",
+        "conditioning_variant": "existing_detailed_reference_only"
+      }
+    ]
+  },
+  "detailed_contract": {
+    "seed": 2026,
+    "latent_frames": 21,
+    "video_frames": 81,
+    "fps": 16,
+    "resolution": [
+      832,
+      480
+    ],
+    "configured_denoising": [
+      1000,
+      750,
+      500,
+      250
+    ],
+    "actual_denoising": [
+      1000.0,
+      937.5,
+      833.3333129882812,
+      625.0
+    ],
+    "native_window": -1,
+    "native_sink": 0,
+    "Local18_window": 18,
+    "no_State": true,
+    "ODE_Local18_same_details": true
+  },
+  "same_prompt_health_reference": {
+    "prompts": [
+      {
+        "prompt": "a sheep taking a peaceful walk",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a sheep taking a peaceful walk-0.mp4",
+        "source_index": 311,
+        "prompt_id": "p0311-51bd21fba64c",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a truck turning a corner",
+        "dims": [
+          "dynamic_degree",
+          "motion_smoothness",
+          "subject_consistency"
+        ],
+        "video": "a truck turning a corner-0.mp4",
+        "source_index": 287,
+        "prompt_id": "p0287-d58e7254d5a7",
+        "selection_stratum": "subject_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "football field",
+        "dims": [
+          "background_consistency",
+          "scene"
+        ],
+        "video": "football field-0.mp4",
+        "source_index": 806,
+        "prompt_id": "p0806-aeaab0431f98",
+        "selection_stratum": "background_consistency",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a dog",
+        "dims": [
+          "object_class"
+        ],
+        "video": "a dog-0.mp4",
+        "source_index": 345,
+        "prompt_id": "p0345-7dbdf68ac0bb",
+        "selection_stratum": "object_class",
+        "reused_CD": true
+      },
+      {
+        "prompt": "a frisbee and skis",
+        "dims": [
+          "multiple_objects"
+        ],
+        "video": "a frisbee and skis-0.mp4",
+        "source_index": 103,
+        "prompt_id": "p0103-ce607f55bc00",
+        "selection_stratum": "multiple_objects",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is skateboarding",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is skateboarding-0.mp4",
+        "source_index": 169,
+        "prompt_id": "p0169-2f9950b3d9a7",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A person is catching or throwing frisbee",
+        "dims": [
+          "human_action"
+        ],
+        "video": "A person is catching or throwing frisbee-0.mp4",
+        "source_index": 187,
+        "prompt_id": "p0187-8671e9608a72",
+        "selection_stratum": "human_action",
+        "reused_CD": true
+      },
+      {
+        "prompt": "A panda cooking in the kitchen",
+        "dims": [
+          "aesthetic_quality",
+          "imaging_quality",
+          "overall_consistency"
+        ],
+        "video": "A panda cooking in the kitchen-0.mp4",
+        "source_index": 759,
+        "prompt_id": "p0759-2fa35850d017",
+        "selection_stratum": "overall_consistency",
+        "reused_CD": true
+      }
+    ],
+    "seeds": [
+      2026,
+      2027
+    ],
+    "local_attn_size": 18,
+    "sink_size": 0,
+    "new_release_EMA_videos": 16,
+    "ODE_source": "reuse matching rows of ODE48x2, no duplicate generation"
+  },
+  "total_reference_and_ODE_detailed_videos": 40,
+  "role": "ability positive reference, never matched-budget competitor or default training initializer",
+  "no_required_paper_score_or_reference_score_match": true,
+  "Local18_compatibility": "verify shapes/cache/finite, same noise and prefix; final chunk differences allowed",
+  "reference_task_failure": "flag applicability, retain samples and thresholds; no automatic health PASS or relabeling old runs as collapsed",
+  "MovieGen_reference_not_official_VBench_scoring_inputs": true
+}

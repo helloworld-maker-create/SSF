@@ -1,0 +1,20 @@
+{
+  "status": "COMMITTED",
+  "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_execution_20261024_225742/training/baseline/checkpoints/emergency_000016.pt",
+  "SHA256": "115729b0b8d753dd021b0013184c6ccff726ef4cfb9549e2820cbeefbe73e92b",
+  "bytes": 34066565321,
+  "counts": {
+    "outer": 16,
+    "G": 4,
+    "C": 16,
+    "EMA_initialized": false,
+    "EMA_updates": 0
+  },
+  "cursor": 1280,
+  "arm": "baseline",
+  "accumulation_position": 0,
+  "generator_raw_tensor_SHA256": "2095e80296b9e6e336516dd239ac5d39dbf683754092c44f64af6a7989d3a921",
+  "generator_EMA_tensor_SHA256": null,
+  "formal_code_manifest_SHA256": "70975231a4673fe2ae303c3f9767332408305c6285094b4e890f70993970e2fb",
+  "readback_all_components_exact": true
+}

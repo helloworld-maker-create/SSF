@@ -1,0 +1,260 @@
+{
+  "scope": "exact archived code/contracts/vendor; not new-host runtime approval",
+  "files": [
+    {
+      "path": "cluster/original_run/contracts/GOAL_HANDOFF.txt",
+      "bytes": 2546,
+      "SHA256": "72e2723d566ee608abf8254a1e351ecd777da1962986a0c0271200cc6b5f5f43"
+    },
+    {
+      "path": "cluster/original_run/contracts/accumulation_ema_qualification.md",
+      "bytes": 2185,
+      "SHA256": "95f5a7aa8f03c3614dd5d4d1f35dd0b72df99b09ba80c4d05501e1edaac66677"
+    },
+    {
+      "path": "cluster/original_run/contracts/baseline_health_gate.json",
+      "bytes": 3969,
+      "SHA256": "a90eebf0fbbad190d3dd480b8aa157c1b05a07a0a5a330e17e79531cc45274cb"
+    },
+    {
+      "path": "cluster/original_run/contracts/decision_rules.md",
+      "bytes": 2986,
+      "SHA256": "f8e0031d5f86728cf277e596655301533f4461191b3d9a7074244743eebaf664"
+    },
+    {
+      "path": "cluster/original_run/contracts/evaluation_manifest.json",
+      "bytes": 31164,
+      "SHA256": "b7d0c0fb2355004f39302cefe1f64026fd932c7e3461f0811f3c8011c7fe51ef"
+    },
+    {
+      "path": "cluster/original_run/contracts/matched_mvp_matrix.csv",
+      "bytes": 299779,
+      "SHA256": "7310e99797887429bb579a920166ca006e8bf855629d0a7f81667a2f6c965338"
+    },
+    {
+      "path": "cluster/original_run/contracts/official_local_gap_matrix.md",
+      "bytes": 2487,
+      "SHA256": "3ecf4a9ec7e47344efa6cdf7b02184ef3acbd9669e85a035884b11acb41b2d6e"
+    },
+    {
+      "path": "cluster/original_run/contracts/parent_version_manifest.json",
+      "bytes": 3542,
+      "SHA256": "00177eb78bed23a9aea7117f7b2a56b8448a38d6f5bbcfa9436e1e4552b99172"
+    },
+    {
+      "path": "cluster/original_run/contracts/phaseG_plan.md",
+      "bytes": 6368,
+      "SHA256": "3b317ca0f4f84cae1f1d61886eb35cb12f1a09b2277f144d9e7d4173f55c2b2a"
+    },
+    {
+      "path": "cluster/original_run/contracts/reference_eval_contract.json",
+      "bytes": 12546,
+      "SHA256": "5d4db7e4c2e07c708563c2ea9518d3f5a6180355d223ae0bf48b8b26ff5a3aa9"
+    },
+    {
+      "path": "cluster/original_run/contracts/resource_budget.json",
+      "bytes": 3246,
+      "SHA256": "e8d630da3b663d03d1894ad152bb1ac6c6a8dc7dc4fa0770c8d8fdd423dbe650"
+    },
+    {
+      "path": "cluster/original_run/contracts/training_contract.json",
+      "bytes": 7380,
+      "SHA256": "96a67671713e722bb9b30fc6d50cbf6c5253460fdeeb1c8ab8be0f9e7cd032eb"
+    },
+    {
+      "path": "cluster/original_run/scripts/audit_first_formal_G64_cpu.py",
+      "bytes": 4900,
+      "SHA256": "526e0aefaa5006a8017312964d658a9ad9212b0de88c08b8cbdc6d8e4ff7cef0"
+    },
+    {
+      "path": "cluster/original_run/scripts/audit_first_formal_outer_cpu.py",
+      "bytes": 5140,
+      "SHA256": "f2ce418382371a6491d41912550153cd7eacbc24fce213ee558a0d57408d269e"
+    },
+    {
+      "path": "cluster/original_run/scripts/build_reference_report_cpu.py",
+      "bytes": 7109,
+      "SHA256": "396e4884bd8e8b2a1a5e774005e9c9402fc0cbee1fc9ed6d43959e2a33f3b7a1"
+    },
+    {
+      "path": "cluster/original_run/scripts/diagnose_bf16_accumulation.py",
+      "bytes": 5618,
+      "SHA256": "599db519d2c2fec1c43fd2b711cddc86c1f2fce2b355e60b10d26f92d53b78aa"
+    },
+    {
+      "path": "cluster/original_run/scripts/freeze_used_assets_cpu.py",
+      "bytes": 2400,
+      "SHA256": "b415ed4fd430c836c6d9fc386d3fd74b922ecbaf24f42f800414142cdf1d6968"
+    },
+    {
+      "path": "cluster/original_run/scripts/g_accumulation.py",
+      "bytes": 3385,
+      "SHA256": "da6450d417a3e0726e6db7d1de50a9dbef2fcaecb631c289f5a13481ced64b29"
+    },
+    {
+      "path": "cluster/original_run/scripts/g_accumulation_sync_candidate.py",
+      "bytes": 1708,
+      "SHA256": "3be10bd320c9df0d7cba739030f5ab4ea112fb80f9e551fd4adeea9daef95a13"
+    },
+    {
+      "path": "cluster/original_run/scripts/g_common.py",
+      "bytes": 4125,
+      "SHA256": "75f995e6dc90da0f1c1c405f818ec017445ba892407f0a7a1a7a64e9a7563256"
+    },
+    {
+      "path": "cluster/original_run/scripts/g_runtime.py",
+      "bytes": 23378,
+      "SHA256": "1c6037d58440c7e3be204829837f48c73b3a0500c8598967c0d6318f55407695"
+    },
+    {
+      "path": "cluster/original_run/scripts/observe_running_baseline_cpu.py",
+      "bytes": 3539,
+      "SHA256": "a60bcf1f574450103a888f683faa30ff93296fcdae3055d34aabe0c87b0f7726"
+    },
+    {
+      "path": "cluster/original_run/scripts/observe_runtime_stop_cpu.py",
+      "bytes": 3879,
+      "SHA256": "934a27bd90603faad1ceca9057c2b02d4f1a0e753d195af8c65e397f37211a1a"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_eval_inputs.py",
+      "bytes": 1740,
+      "SHA256": "772a796a8da61c043f135582efd908eedd31235e41b4fad7cca007bb3f910dcb"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_formal_checkpoint.py",
+      "bytes": 6653,
+      "SHA256": "7c4396cc36efd66a8bea1c2633c0a6790183fb432a7e3a9d3149fe6dff37808c"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_formal_control.py",
+      "bytes": 3874,
+      "SHA256": "620e11fe201d8e8c97e55aadb4c668b8fccb0443af2c0c42a9de346863665d47"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_formal_metrics.py",
+      "bytes": 7458,
+      "SHA256": "204951c113ce5030b462858259e7413c002265d3175fffcfeb11f9320cef3011"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_formal_monitor.py",
+      "bytes": 7619,
+      "SHA256": "c327972531d83cad4adbf65ca8eb995eb3c8dc4a994d16857a27ae94e8002c6d"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_health_pack_cpu.py",
+      "bytes": 6618,
+      "SHA256": "89178adfa77dea3581c83ee78ec147c6f1c3a2f43098b4d2e1fa9ad6eb0ee4ac"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_launch.py",
+      "bytes": 4204,
+      "SHA256": "420900e7cf3aa3fdfbb65b01f5ab6f2ec3d34413393a84036e6bdb8266ca6f9c"
+    },
+    {
+      "path": "cluster/original_run/scripts/phaseg_train.py",
+      "bytes": 11410,
+      "SHA256": "ee464b275042967567b8acff647b9995ee5e5a27d492e96d02b8092a8743b3c6"
+    },
+    {
+      "path": "cluster/original_run/scripts/qualify_dmd_accumulation.py",
+      "bytes": 14351,
+      "SHA256": "e8fbd83b7ea250f1f9704f97a621f633234ec76d8ea7c95e6c487e369082f022"
+    },
+    {
+      "path": "cluster/original_run/scripts/qualify_dmd_accumulation_sync_candidate.py",
+      "bytes": 14632,
+      "SHA256": "0196067ea1490e70006e7c7eab9b2613b31e83977e210cc403401fe0ee7e22d1"
+    },
+    {
+      "path": "cluster/original_run/scripts/qualify_fsdp_toy.py",
+      "bytes": 4120,
+      "SHA256": "ee15361a01d47eb50feb50d3b0526987f4cd08badfcf8c996cb40e17ac92f5dc"
+    },
+    {
+      "path": "cluster/original_run/scripts/reference_metrics.py",
+      "bytes": 7621,
+      "SHA256": "1cbbfaac89fcf59ae45cc55d1daa0720193805283e3779cdae3a64c49be5be74"
+    },
+    {
+      "path": "cluster/original_run/scripts/reference_worker.py",
+      "bytes": 10568,
+      "SHA256": "e86f28d3e2d9137697e251e591cac74c3974a5d25cf262f17d18a061dcead7ac"
+    },
+    {
+      "path": "cluster/original_run/scripts/reuse_historical_reference_cpu.py",
+      "bytes": 6639,
+      "SHA256": "22d64ce9d9b22bafc9973827a60a0f5c62fa612eeebf38b22ec0922664f0fc52"
+    },
+    {
+      "path": "cluster/original_run/scripts/stage_A_candidate_postflight.py",
+      "bytes": 3260,
+      "SHA256": "d6599b79333bfecd9de446d66dd3cd5d299480bb90299fac4c2d253fae8bb4a0"
+    },
+    {
+      "path": "cluster/original_run/scripts/stage_A_measured_summary.py",
+      "bytes": 7184,
+      "SHA256": "302b05eaca77c1405807e6b5b919a48e10d35816fb9e95ed742660b7f7449250"
+    },
+    {
+      "path": "cluster/original_run/scripts/stage_A_runner.py",
+      "bytes": 11502,
+      "SHA256": "bb15834175e946470d9f6e71cf0fc36b25150dfc61fbdbb6ad80ccf62afff01e"
+    },
+    {
+      "path": "cluster/original_run/scripts/test_accumulation_cpu.py",
+      "bytes": 3997,
+      "SHA256": "8970e1bbd55a5efe678bff3f487a174b26a4c1b316efb17c0280b0330b91e248"
+    },
+    {
+      "path": "cluster/original_run/scripts/test_phaseg_eval_cpu.py",
+      "bytes": 2028,
+      "SHA256": "2eec97f290d9d2be5f33c13f73ae552f58294284d39dd78be02a03a16c50ced4"
+    },
+    {
+      "path": "cluster/original_run/scripts/test_phaseg_formal_control.py",
+      "bytes": 2973,
+      "SHA256": "fd7ad5f7479ef55fdef7d6db7df48d5cd92c34a2206344c3f8c15f50af49500f"
+    },
+    {
+      "path": "cluster/original_run/scripts/test_sync_candidate_cpu.py",
+      "bytes": 1793,
+      "SHA256": "06da4834e129026c392c6e02caa9cf0d98b6e6a22891379661049ebe39675698"
+    },
+    {
+      "path": "cluster/original_run/source_manifest/formal_code_manifest.json",
+      "bytes": 1580,
+      "SHA256": "70975231a4673fe2ae303c3f9767332408305c6285094b4e890f70993970e2fb"
+    },
+    {
+      "path": "cluster/original_run/source_manifest/source_files.json",
+      "bytes": 15224,
+      "SHA256": "3d6f37145dfe7013ff1ec522f59be719bc345d4b6c358dd953d801d909398697"
+    },
+    {
+      "path": "cluster/original_run/vendor/b_common.py",
+      "bytes": 4655,
+      "SHA256": "14ab236a6db2700571bd4469edd87716c9f8a562a91da19d570961bc54463cdd"
+    },
+    {
+      "path": "cluster/original_run/vendor/metric_filename_contract.py",
+      "bytes": 3763,
+      "SHA256": "2ecafc65473c098ef824bf37f1db8f5fc5c3cfe4d9f436f523ecc7cba1feff92"
+    },
+    {
+      "path": "cluster/original_run/vendor/official_vbench_prompt_metadata.json",
+      "bytes": 228118,
+      "SHA256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd"
+    },
+    {
+      "path": "cluster/original_run/vendor/prior_evaluation_contract.json",
+      "bytes": 10583,
+      "SHA256": "7b2868c7262c9ec16d1b28e23d694abde1bb338e698ba06f2a70b6b95ecf4cbe"
+    },
+    {
+      "path": "cluster/original_run/vendor/prior_metric_assets_manifest.json",
+      "bytes": 13075,
+      "SHA256": "10cca03f842601455aef2ceee6b7d5a2d8fe627b46dd27c3966c370bfffb2c43"
+    }
+  ]
+}

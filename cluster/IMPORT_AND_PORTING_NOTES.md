@@ -1,0 +1,9 @@
+# Import与集群端口注意事项
+
+原生Wan代码在wan/modules/t5.py的T5EncoderModel默认参数中调用torch.cuda.current_device()。因此即使不实例化模型，完整model/pipeline导入也需要可见CUDA设备。
+
+本次在CUDA_VISIBLE_DEVICES空值的CPU-only导入检查因上述原生行为失败，未加载权重或实例化模型，未报告为import PASS，也没有为包装修改模型代码。cluster/preflight.py刻意仅用标准库和compile，不import模型，已通过。正式模块导入资格请在集群已分配的GPU节点执行。
+
+原训练解释器缺pytest，因此根目录pytest套件本次未重跑；5项原生累积/事件CPU unittest通过。详细结果见VALIDATION.md。
+
+原95源文件中字节级算法代码保持不变，唯一.gitignore改动用于排除大资产。原主机路径/world2限制仍在归档运行代码中；8卡candidate不是已经通过资格的8卡launcher。

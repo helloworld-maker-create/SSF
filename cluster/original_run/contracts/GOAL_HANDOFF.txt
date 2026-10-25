@@ -1,0 +1,28 @@
+SSF Phase G v1.2 FINAL-PENDING；PLAN_PATH=/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/phaseG_plan.md
+先核对version_manifest.json及11份合同。它们尚未用户批准，禁止把附件占位符或计划额度当执行批准。
+实际科学合同、精简存储、A、B、用户评分/C批准分别记录，当前全PENDING。
+当前仅可整理文档与只读检查；不运行GPU资格/生成/评分/训练，也不启后台等卡controller。
+
+B64、micro1、600完整outer、120G/600C；EMA.99，outer200初始化，400/600更新40/80次。
+G/C均64样本；参数固定累计loss/A；根FSDP no_sync后的最终sync必须含此前所有micro。
+所有rank用各自根generator/fake_score.clip_grad_norm_，只clip/step一次；不局部分片clip，不重复除world。
+same_step_across_blocks=True时全chunk使用共享七项列表第一项；噪声/score timestep仍按样本。
+原DMD/ODE/critic初始化、Local18/sink0、State8tokens Reader15后Writer20、nativeKV和State单转移detach冻结。
+checkpointing OFF，禁止F routing/历史KV detach、新seed、架构loss、batch/EMA消融。
+
+原存储门856GiB在精简方案批准前继续有效。精简估峰482，cap500+余量256=756仍PENDING。
+例行完整快照提案仅200/400/600；不删历史。保留完整状态、读回、COMMITTED及应急规则。
+重算可近200outer，算入预算。配额UNKNOWN不推定无限。不删除迁移压缩旧证据。
+
+三段各需真实新批准：A资格48+生成评分8、136视频；G1重估后B训练500+评测60、256视频；
+用户冻结评分+健康PASS+明确C批准后，C训练500+评测60、272视频。
+8/4/2 H20资格后锁定拓扑；先查空闲UUID/VRAM/util/进程/RAM/disk，不kill他人。
+超预算停，不降B64或增预算。只验证新增路径，不重做B–F。
+
+正常新视频664，上限800。原8详细参考保留；增加发布EMA Local18的健康8×2参考。
+ODE健康片复用48×2。48原始prompt×seed2026/2027，主600EMA对EMA、次raw/raw。
+参考同任务失败标适用性，不改门。T=0计严重时序失败并集。
+Baseline完成导出去身份完整片与空白表，隐藏AI与映射，置AWAITING_USER_HEALTH_REVIEW，释放GPU退出。
+无真实用户冻结评分和明确继续批准，绝不启动SSF。view-only仅解决兼容，不评分、不算模型生成样本。
+负结果保留，不将新旧变化归因单一因素，不宣称旧run必然崩溃。
+完成已授权范围后停；不得自动30s/full944/wrong-State/SVD或新一轮归因。

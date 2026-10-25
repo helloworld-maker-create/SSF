@@ -1,0 +1,105 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PROPOSAL_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:40:39.320669+08:00",
+  "execution_authorized": false,
+  "planning_caps_not_execution_grants": true,
+  "actual_execution_grants": null,
+  "planned_GPU_hours": {
+    "qualification": 48,
+    "formal_training": 1000,
+    "generation_scoring": 128,
+    "total": 1176
+  },
+  "stages": {
+    "A": {
+      "qualification_GPUh": 48,
+      "generation_scoring_GPUh": 8,
+      "formal_training_GPUh": 0,
+      "new_videos": 136
+    },
+    "B": {
+      "qualification_GPUh": 0,
+      "generation_scoring_GPUh": 60,
+      "formal_training_GPUh": 500,
+      "new_videos": 256
+    },
+    "C": {
+      "qualification_GPUh": 0,
+      "generation_scoring_GPUh": 60,
+      "formal_training_GPUh": 500,
+      "new_videos": 272
+    }
+  },
+  "original_storage": {
+    "new_cap_GiB": 600,
+    "safety_free_GiB": 256,
+    "start_gate_GiB": 856,
+    "gate_effective_until_compact_approval": true,
+    "actual_experimental_allocation": null
+  },
+  "compact_storage_proposal": {
+    "approval": "PENDING",
+    "new_cap_GiB": 500,
+    "safety_free_GiB": 256,
+    "start_gate_GiB": 756,
+    "per_full_snapshot_GiB_estimate": 38,
+    "legacy_size_observation_GiB": 37.05660464055836,
+    "peak_components_GiB": {
+      "six_routine": 228,
+      "two_retained_emergency": 76,
+      "one_pending_write": 38,
+      "qualification": 64,
+      "lossless_video_and_scores": 60,
+      "view_only": 8,
+      "code_logs_manifests": 8
+    },
+    "conservative_peak_GiB": 482,
+    "estimate_not_new_FULL_SHARD_measurement": true,
+    "qualification_must_recompute_sizes": true,
+    "never_drop_required_state_or_compress_evidence_to_fit": true
+  },
+  "GPU": {
+    "max_H20s": 8,
+    "world_candidates": [
+      8,
+      4,
+      2
+    ],
+    "util_max_percent": 5,
+    "free_min_GiB": 120,
+    "no_other_users_compute": true,
+    "preflight_before_each_load": true,
+    "reserve_UUID_at_spawn": true,
+    "fixed_world_and_layout_across_pair": true,
+    "no_world_change_within_batch": true,
+    "observed_model": "H20-3e",
+    "observed_total_MiB": 143771,
+    "observed_interconnect": "NV18",
+    "observations_not_a_current_availability_reservation": true
+  },
+  "host": {
+    "projection": "1.25*measured/projected initialization+runtime peak +128GiB <= current MemAvailable",
+    "do_not_clone_eight_legacy_full_stacks": true
+  },
+  "scheduling": {
+    "formal_jobs_concurrent": 1,
+    "formal_arms_max": 2,
+    "generation_scoring_workers_max": 2,
+    "unique_ports": true,
+    "resource_retry_seconds": 60,
+    "resource_retry_minutes": 30,
+    "do_not_start_background_waiter_in_planning": true
+  },
+  "cost_prior": {
+    "typical_single_sample_G_seconds": 59,
+    "typical_C_seconds": 26,
+    "prior_per_arm_GPUh_approx": 400,
+    "not_H100_speed_equivalence": true,
+    "G1_reforecast_mandatory_before_B_approval": true,
+    "measure_qualified_full_batches_not_YAML": true
+  },
+  "budget_stop": "BLOCKED_BUDGET before exceeded; no automatic B16/B1 fallback or cap increase",
+  "quotas": "UNKNOWN unless readable; filesystem availability is not personal quota or granted allocation",
+  "no_delete_migrate_compress_or_overwrite_old_evidence": true
+}

@@ -1,0 +1,47 @@
+{
+  "frozen_at": "2026-10-25T10:30:51.603483+08:00",
+  "source_production_unmodified": true,
+  "scope": "single native-loss training engine, qualified sync accumulation and frozen monitoring; no model/source algorithm change",
+  "files": [
+    {
+      "name": "g_common.py",
+      "SHA256": "75f995e6dc90da0f1c1c405f818ec017445ba892407f0a7a1a7a64e9a7563256"
+    },
+    {
+      "name": "g_runtime.py",
+      "SHA256": "1c6037d58440c7e3be204829837f48c73b3a0500c8598967c0d6318f55407695"
+    },
+    {
+      "name": "g_accumulation.py",
+      "SHA256": "da6450d417a3e0726e6db7d1de50a9dbef2fcaecb631c289f5a13481ced64b29"
+    },
+    {
+      "name": "g_accumulation_sync_candidate.py",
+      "SHA256": "3be10bd320c9df0d7cba739030f5ab4ea112fb80f9e551fd4adeea9daef95a13"
+    },
+    {
+      "name": "phaseg_formal_control.py",
+      "SHA256": "620e11fe201d8e8c97e55aadb4c668b8fccb0443af2c0c42a9de346863665d47"
+    },
+    {
+      "name": "phaseg_formal_checkpoint.py",
+      "SHA256": "7c4396cc36efd66a8bea1c2633c0a6790183fb432a7e3a9d3149fe6dff37808c"
+    },
+    {
+      "name": "phaseg_formal_monitor.py",
+      "SHA256": "c327972531d83cad4adbf65ca8eb995eb3c8dc4a994d16857a27ae94e8002c6d"
+    },
+    {
+      "name": "phaseg_train.py",
+      "SHA256": "ee464b275042967567b8acff647b9995ee5e5a27d492e96d02b8092a8743b3c6"
+    },
+    {
+      "name": "phaseg_launch.py",
+      "SHA256": "420900e7cf3aa3fdfbb65b01f5ab6f2ec3d34413393a84036e6bdb8266ca6f9c"
+    },
+    {
+      "name": "stage_A_runner.py",
+      "SHA256": "bb15834175e946470d9f6e71cf0fc36b25150dfc61fbdbb6ad80ccf62afff01e"
+    }
+  ]
+}

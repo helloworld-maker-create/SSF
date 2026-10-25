@@ -1,0 +1,79 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PLAN_FROZEN_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:43:03.455251+08:00",
+  "bundle_SHA256": "bf345230baeaaa1274fe75dabedabef1a36d525793494109c428e4ac16f1ae4f",
+  "hash_definition": "SHA256(canonical JSON of {version,files}; sort_keys=True,ensure_ascii=False,separators=(comma,colon))",
+  "files": [
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/phaseG_plan.md",
+      "name": "phaseG_plan.md",
+      "bytes": 6368,
+      "SHA256": "3b317ca0f4f84cae1f1d61886eb35cb12f1a09b2277f144d9e7d4173f55c2b2a"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/official_local_gap_matrix.md",
+      "name": "official_local_gap_matrix.md",
+      "bytes": 2487,
+      "SHA256": "3ecf4a9ec7e47344efa6cdf7b02184ef3acbd9669e85a035884b11acb41b2d6e"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/reference_eval_contract.json",
+      "name": "reference_eval_contract.json",
+      "bytes": 12546,
+      "SHA256": "5d4db7e4c2e07c708563c2ea9518d3f5a6180355d223ae0bf48b8b26ff5a3aa9"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/training_contract.json",
+      "name": "training_contract.json",
+      "bytes": 7380,
+      "SHA256": "96a67671713e722bb9b30fc6d50cbf6c5253460fdeeb1c8ab8be0f9e7cd032eb"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/accumulation_ema_qualification.md",
+      "name": "accumulation_ema_qualification.md",
+      "bytes": 2185,
+      "SHA256": "95f5a7aa8f03c3614dd5d4d1f35dd0b72df99b09ba80c4d05501e1edaac66677"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/resource_budget.json",
+      "name": "resource_budget.json",
+      "bytes": 3246,
+      "SHA256": "e8d630da3b663d03d1894ad152bb1ac6c6a8dc7dc4fa0770c8d8fdd423dbe650"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/baseline_health_gate.json",
+      "name": "baseline_health_gate.json",
+      "bytes": 3969,
+      "SHA256": "a90eebf0fbbad190d3dd480b8aa157c1b05a07a0a5a330e17e79531cc45274cb"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/matched_mvp_matrix.csv",
+      "name": "matched_mvp_matrix.csv",
+      "bytes": 299779,
+      "SHA256": "7310e99797887429bb579a920166ca006e8bf855629d0a7f81667a2f6c965338"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/evaluation_manifest.json",
+      "name": "evaluation_manifest.json",
+      "bytes": 31164,
+      "SHA256": "b7d0c0fb2355004f39302cefe1f64026fd932c7e3461f0811f3c8011c7fe51ef"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/decision_rules.md",
+      "name": "decision_rules.md",
+      "bytes": 2986,
+      "SHA256": "f8e0031d5f86728cf277e596655301533f4461191b3d9a7074244743eebaf664"
+    },
+    {
+      "path": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/GOAL_HANDOFF.txt",
+      "name": "GOAL_HANDOFF.txt",
+      "bytes": 2546,
+      "SHA256": "72e2723d566ee608abf8254a1e351ecd777da1962986a0c0271200cc6b5f5f43"
+    }
+  ],
+  "execution_authorized": false,
+  "approval_state_at_freeze": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/approval_status_at_freeze.json",
+  "history": "/data/wangyuqi_intern26/ssf_runs/phaseG_plan_20261024_223117/history/version_lineage.json",
+  "historical_files_preserved": true
+}

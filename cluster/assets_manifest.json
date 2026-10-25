@@ -1,0 +1,131 @@
+{
+  "assets": [
+    {
+      "group": "teacher_14b",
+      "relative_path": "config.json",
+      "bytes": 250,
+      "SHA256": "7c9d7887442cb46716380bdf4426933d7cf88cbb31abcb434ea219322f5580ad"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00001-of-00006.safetensors",
+      "bytes": 9887603256,
+      "SHA256": "569d54a07279b89f8281421fccf27ee2459ea853ce6845d3536b8664b0070078"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00002-of-00006.safetensors",
+      "bytes": 9839059648,
+      "SHA256": "b17ff172f262b4da91c31e8c46d3b7707f62cecfff6e18dd0072ab29eb350e46"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00003-of-00006.safetensors",
+      "bytes": 9839059744,
+      "SHA256": "741fd1508cd0288f0bb0f4fb3df6734da521d5ff23746170c848564a367e2cea"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00004-of-00006.safetensors",
+      "bytes": 9839059744,
+      "SHA256": "47b08ba289b127fc64979bc877ee07e1c87aeb8eb8cd47bcfd112682847981ba"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00005-of-00006.safetensors",
+      "bytes": 9839059744,
+      "SHA256": "29e35f4cf0e3a61f4726c960f1babf71d65677a8c99fe704257d665c9498ee88"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model-00006-of-00006.safetensors",
+      "bytes": 7910235256,
+      "SHA256": "91ac087a40b814331e87f5f015af11ba999275d48d2af49591b6bf7727d3c146"
+    },
+    {
+      "group": "teacher_14b",
+      "relative_path": "diffusion_pytorch_model.safetensors.index.json",
+      "bytes": 96805,
+      "SHA256": "d62743ee76929dc76264d4b86abd710eab38157e17ab12659e66158efb8e069c"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "Wan2.1_VAE.pth",
+      "bytes": 507609880,
+      "SHA256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "config.json",
+      "bytes": 249,
+      "SHA256": "ab37994c43740513f94b3ba6233a784035a67b43c8cde83c8f31aa90468c67ce"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "diffusion_pytorch_model.safetensors",
+      "bytes": 5676070424,
+      "SHA256": "96b6b242ca1c2f24e9d02cd6596066fab6d310e2d7538f33ae267cb18d957e8f"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "google/umt5-xxl/special_tokens_map.json",
+      "bytes": 6623,
+      "SHA256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "google/umt5-xxl/spiece.model",
+      "bytes": 4548313,
+      "SHA256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "google/umt5-xxl/tokenizer.json",
+      "bytes": 16837417,
+      "SHA256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "google/umt5-xxl/tokenizer_config.json",
+      "bytes": 61728,
+      "SHA256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05"
+    },
+    {
+      "group": "wan_1_3b",
+      "relative_path": "models_t5_umt5-xxl-enc-bf16.pth",
+      "bytes": 11361920418,
+      "SHA256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d"
+    },
+    {
+      "group": "training_prompts",
+      "relative_path": null,
+      "bytes": 145875068,
+      "SHA256": "7896742f468bc8aef9e4547424d1ce0a951acdb2a82233790155401a99bf5aa5"
+    },
+    {
+      "group": "ode_init",
+      "relative_path": null,
+      "bytes": 5676203690,
+      "SHA256": "b5396b8076ab3b920c9e4f4a2b52daa2c98c9983fb5e067ae5160fdf778dce21"
+    },
+    {
+      "group": "full_resume",
+      "relative_path": null,
+      "optional": true,
+      "bytes": 34066565321,
+      "SHA256": "115729b0b8d753dd021b0013184c6ccff726ef4cfb9549e2820cbeefbe73e92b",
+      "qualified_world_size": 2,
+      "counts": {
+        "outer": 16,
+        "G": 4,
+        "C": 16,
+        "EMA_initialized": false,
+        "EMA_updates": 0
+      }
+    }
+  ],
+  "weights_in_Git": false,
+  "automatic_download": false,
+  "automatic_symlink_change": false,
+  "full_resume_requires_same_topology_and_new_host_qualification": true
+}

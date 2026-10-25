@@ -1,0 +1,253 @@
+{
+  "checkpoints": {
+    "baseline": {
+      "path": "/data/wangyuqi_intern26/ssf_runs/matched20_20261010_213610/baseline/generator_20updates.pt",
+      "sha256": "881bb01e4bbc86e7d1bec0ce3623b8af757b5f8989ef15881437858ac4c0fef0",
+      "bytes": 5676335761,
+      "training_metadata": {
+        "arm": "baseline",
+        "generator_updates": 20,
+        "critic_updates": 96,
+        "trainer_step": 96,
+        "seed": 2026,
+        "world_size": 1,
+        "raw_generator": true,
+        "checkpointing": false
+      },
+      "tensors": 825,
+      "raw_generator": true,
+      "EMA": false
+    },
+    "ssf": {
+      "path": "/data/wangyuqi_intern26/ssf_runs/matched20_20261010_213610/ssf/generator_20updates.pt",
+      "sha256": "944c23193b7d475cd3b2f4154e7f961c0c5313fc09c95295b7fdac77cc3e67c0",
+      "bytes": 5688985407,
+      "training_metadata": {
+        "arm": "ssf",
+        "generator_updates": 20,
+        "critic_updates": 96,
+        "trainer_step": 96,
+        "seed": 2026,
+        "world_size": 1,
+        "raw_generator": true,
+        "checkpointing": false
+      },
+      "tensors": 836,
+      "raw_generator": true,
+      "EMA": false
+    }
+  },
+  "weight_choice": "raw_generator",
+  "batch_size": 1,
+  "dtype": "torch.bfloat16",
+  "resolution": {
+    "width": 832,
+    "height": 480
+  },
+  "fps": 16,
+  "output_frames": 81,
+  "duration_seconds": 5.0625,
+  "latent_shape": [
+    1,
+    21,
+    16,
+    60,
+    104
+  ],
+  "chunk_latent_frames": 3,
+  "total_chunks": 7,
+  "gradient_checkpointing": false,
+  "configured_denoising_schedule": [
+    1000,
+    750,
+    500,
+    250
+  ],
+  "native_forward_timesteps": [
+    1000.0,
+    937.5,
+    833.3333129882812,
+    625.0
+  ],
+  "warp_denoising_step": true,
+  "timestep_shift": 5.0,
+  "context_refresh_timestep": 0,
+  "local_attn_size": 18,
+  "sink_size": 0,
+  "text_preprocessing": {
+    "raw_official_prompts": true,
+    "LLM_rewrite": false,
+    "tokenizer": "UMT5-XXL",
+    "seq_len": 512,
+    "tokenizer_clean": "whitespace",
+    "text_encoder_trainable": false,
+    "generator_classifier_free_guidance": false,
+    "negative_prompt_not_used_in_generation": true
+  },
+  "assets": {
+    "Wan2.1_VAE.pth": {
+      "path": "/data/wangyuqi_intern26/repos/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+      "resolved": "/data/tuyijing/TTS/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+      "bytes": 507609880,
+      "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    },
+    "models_t5_umt5-xxl-enc-bf16.pth": {
+      "path": "/data/wangyuqi_intern26/repos/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth",
+      "resolved": "/data/tuyijing/TTS/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth",
+      "bytes": 11361920418,
+      "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d"
+    },
+    "tokenizer": {
+      "path": "/data/wangyuqi_intern26/repos/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/google/umt5-xxl",
+      "resolved": "/data/tuyijing/TTS/Self-Forcing/wan_models/Wan2.1-T2V-1.3B/google/umt5-xxl",
+      "files": {
+        "special_tokens_map.json": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+        "spiece.model": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+        "tokenizer.json": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+        "tokenizer_config.json": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05"
+      }
+    }
+  },
+  "initial_latent": null,
+  "profile": false,
+  "low_memory": false,
+  "return_latents": true,
+  "seed_behavior": {
+    "original_seed": 2026,
+    "inference_seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "reset_before_each_prompt": true,
+    "initial_noise_policy": "torch.randn full BTFHW BF16 CUDA",
+    "native_renoise_calls": 21,
+    "paired_noise_tape": true
+  },
+  "encoding": {
+    "codec": "libx264rgb",
+    "crf": 0,
+    "threads": 1,
+    "pixel_rounding": "(255*video).to(torch.uint8)",
+    "source_lossless": true,
+    "input_decoded_RGB_hash_match_required": true
+  },
+  "prompt_source": {
+    "path": "/data/tuyijing/LongLive/metrics/VBench/vbench/VBench_full_info.json",
+    "sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd",
+    "n_entries": 946,
+    "n_unique_prompts": 944,
+    "original_suite_sha256": "257dcdc2b0ad6b46543ef291533443b43b0dc28c044cfeb1dbf3512dc8ec5fe3"
+  },
+  "generation_environment": {
+    "executable": "/data/tuyijing/anaconda3/envs/self/bin/python",
+    "python": "3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]",
+    "torch": "2.8.0+cu129",
+    "CUDA": "12.9",
+    "PYTHONNOUSERSITE": 1
+  },
+  "metric_environment": {
+    "python": "3.10.0 (default, Mar  3 2022, 09:58:08) [GCC 7.5.0]",
+    "executable": "/data/tuyijing/anaconda3/envs/vbench2/bin/python",
+    "packages": {
+      "torch": "2.5.1",
+      "numpy": "1.26.3",
+      "vbench": "0.1.5"
+    },
+    "torch_runtime_version": "2.5.1+cu124",
+    "torch_CUDA": "12.4",
+    "numpy_runtime_version": "1.26.3",
+    "source": "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/__init__.py",
+    "PYTHONPATH_prefix": "/data/wangyuqi_intern26/repos/Self_Gradient_Forcing/d2_deps",
+    "PYTHONNOUSERSITE": 1
+  },
+  "metric_module_SHA256": {
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/subject_consistency.py": "55f5c9a3e5be543380a709b94712903fa67a76340c3c0cb2414ac090dbd1b78d",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/background_consistency.py": "7def92057819df0dad01c857eecf3b39b8b555c8cdfe881a672cc2b19dc226b4",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/temporal_flickering.py": "c2c892034d1652c9390f213308c18b77ae20a87bd52fc50a125294ce83af4e83",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/motion_smoothness.py": "df15c9bb078bcb514c2fcee62ffe5d497340a4ab0ea9a37abfe061adacd56664",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/dynamic_degree.py": "2e93d3a7af38bfbe459c19c9d127894f687424a0bc534dbf7e6571d17b24dff7",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/aesthetic_quality.py": "caf86008a3e56974524d286e5b968a31536e315005d0b20f06fae9d5d37da539",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/imaging_quality.py": "ac6c648cb4d5e82cd29c63be04977e9288c3540558cf12f979e66bef3e1f9e3a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/object_class.py": "8d4c4a7feee52503e3d27f8aba0ed467cbc356ed75da2598367b572237e05db2",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/multiple_objects.py": "fa5047aa560158f017e46dea3ae763ed083df08ece63e47f61a7ea4fc55be672",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/human_action.py": "4cee71a1e09e0b2f7e1a8126300c9250be19e3866f49004c8b69b4a5a15e8945",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/color.py": "03baffc12508fd7ce6c70a227d6794bbc7152c24ba2d2c447a816974466db3d7",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/spatial_relationship.py": "26f09a111dac904d1a92ae5bd1c332a029cebd22610d62376a09d7d634950270",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/scene.py": "f14c423710c812af2be953db619ed6e8b478acdc44f1df775815adfa30171965",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/temporal_style.py": "9f9e950efca4673721d0a07ea83137be9ebdc9aef2364f412300ba979beef57a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/appearance_style.py": "166b291abe55b0ac28ff4c937469e42cc2aa135c308ab06665518837956deb2a",
+    "/data/tuyijing/anaconda3/envs/vbench2/lib/python3.10/site-packages/vbench/overall_consistency.py": "325beb4503699b08d441a467710240097c15c2267fe92dbed1ed8cdfaa96103e"
+  },
+  "metric_mode": "vbench_standard on original-membership subsets only",
+  "metric_seed_per_dimension": 2026,
+  "metric_imaging_preprocessing": "longer",
+  "metric_normalization": {
+    "path": "/data/tuyijing/LongLive/metrics/VBench/scripts/constant.py",
+    "sha256": "c265be4cb51f95257e0b9dfbcb95453d39edca47ee14cb3f7b11e6f20f165e17",
+    "panel_official_total_prohibited": true
+  },
+  "inference_configs": {
+    "baseline": {
+      "independent_first_frame": false,
+      "warp_denoising_step": true,
+      "num_frame_per_block": 3,
+      "context_noise": 0,
+      "denoising_step_list": [
+        1000,
+        750,
+        500,
+        250
+      ],
+      "model_kwargs": {
+        "timestep_shift": 5.0,
+        "local_attn_size": 18,
+        "sink_size": 0,
+        "cached_attention_cpu_offload": true,
+        "cached_block_cpu_offload": true
+      },
+      "persistent_state": {
+        "enabled": false,
+        "num_slots": 8,
+        "reader_block": 15,
+        "writer_block": 20,
+        "attention_dim": 256,
+        "num_heads": 4,
+        "init_seed": 0
+      }
+    },
+    "ssf": {
+      "independent_first_frame": false,
+      "warp_denoising_step": true,
+      "num_frame_per_block": 3,
+      "context_noise": 0,
+      "denoising_step_list": [
+        1000,
+        750,
+        500,
+        250
+      ],
+      "model_kwargs": {
+        "timestep_shift": 5.0,
+        "local_attn_size": 18,
+        "sink_size": 0,
+        "cached_attention_cpu_offload": true,
+        "cached_block_cpu_offload": true
+      },
+      "persistent_state": {
+        "enabled": true,
+        "num_slots": 8,
+        "reader_block": 15,
+        "writer_block": 20,
+        "attention_dim": 256,
+        "num_heads": 4,
+        "init_seed": 0
+      }
+    }
+  },
+  "repo_commit": "33593df3e81fa3ec10239271dd2c100facac6de1",
+  "repo_status": " M demo.py\n M inference.py\n M model/base.py\n M pipeline/causal_diffusion_inference.py\n M pipeline/causal_inference.py\n M pipeline/self_forcing_training.py\n M trainer/distillation.py\n M utils/distributed.py\n M utils/wan_wrapper.py\n M wan/modules/causal_model.py\n?? configs/sf_local18.yaml\n?? configs/ssf_local18_state.yaml\n?? docs/\n?? tests/\n?? utils/activation_offload.py\n?? utils/crossattn_cache.py\n?? utils/persistent_state.py\n",
+  "production_source_changes": false,
+  "current_gradient_semantics": "Direct State edge truncates S_prev and H_ctx; native historical KV remains differentiable. Not global graph TBPTT-1.",
+  "contract_SHA256": "0c4a9d222c936a1e2edd9ff87930737bd592fa93b447ab28acf6a57de453be0a"
+}

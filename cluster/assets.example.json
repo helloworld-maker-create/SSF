@@ -1,0 +1,7 @@
+{
+  "wan_1_3b": "/REPLACE/Wan2.1-T2V-1.3B",
+  "teacher_14b": "/REPLACE/Wan2.1-T2V-14B",
+  "ode_init": "/REPLACE/ode_init.pt",
+  "training_prompts": "/REPLACE/vidprom_filtered_extended.txt",
+  "full_resume": null
+}

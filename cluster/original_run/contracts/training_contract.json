@@ -1,0 +1,247 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PROPOSAL_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:40:39.320669+08:00",
+  "execution_authorized": false,
+  "repository": "/data/wangyuqi_intern26/repos/Self-Forcing",
+  "upstream_commit": "33593df3e81fa3ec10239271dd2c100facac6de1",
+  "experiment_arms": [
+    "baseline",
+    "ssf"
+  ],
+  "training_seed": 2027,
+  "sampler_seed": 0,
+  "training_realizations": 1,
+  "start": "fresh approved ODE and original pretrained fake-score, never old20/50/75/80 weights",
+  "total_batch_size": 64,
+  "microbatch": 1,
+  "world_size_candidates": [
+    8,
+    4,
+    2
+  ],
+  "topology_selected": null,
+  "accumulation": "64/world_size; chosen once for both arms",
+  "completed_outer_iterations": 600,
+  "optimizer_order": "for outer0..599: G if outer%5==0, then C always; increment outer after C",
+  "expected_counts": {
+    "generator": 120,
+    "critic": 600
+  },
+  "update_checkpoints": [
+    {
+      "outer": 200,
+      "G": 40,
+      "C": 200,
+      "EMA_updates": 0,
+      "samples": 15360
+    },
+    {
+      "outer": 400,
+      "G": 80,
+      "C": 400,
+      "EMA_updates": 40,
+      "samples": 30720
+    },
+    {
+      "outer": 600,
+      "G": 120,
+      "C": 600,
+      "EMA_updates": 80,
+      "samples": 46080
+    }
+  ],
+  "optimizer": {
+    "type": "AdamW",
+    "generator_lr": 2e-06,
+    "critic_lr": 4e-07,
+    "betas": [
+      0.0,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01
+  },
+  "precision": "BF16 execution, FP32 reduction and FP32 EMA",
+  "EMA": {
+    "decay": 0.99,
+    "initialize_after_completed_outer": 200,
+    "source_generator_update": 40,
+    "refresh_only_after_real_G_step": true,
+    "FP32": true,
+    "include_all_State_parameters": true,
+    "no_sparse_checkpoint_averaging": true,
+    "initialization_is_not_an_EMA_update": true
+  },
+  "accumulation_rules": {
+    "parameters_fixed": true,
+    "scale_loss_by": "1/accumulation_steps only",
+    "rank_reduction": "FSDP average; no second world-size divisor",
+    "no_sync": "corresponding root, first A-1 micros",
+    "final_sync_includes_all_prior_micro_gradients": true,
+    "clip": "corresponding ROOT FSDP.clip_grad_norm_, all ranks participate",
+    "G_clip_root": "generator",
+    "C_clip_root": "fake_score",
+    "max_norm_G": 10.0,
+    "max_norm_C": 10.0,
+    "forbidden": "ordinary local-shard/subset clip, per-micro clip/step/counter/EMA advance",
+    "both_G_and_C_samples": 64,
+    "rollout_KV_and_State_reset_each_micro": true
+  },
+  "randomness": {
+    "scope": "one immutable plan per logical G or C update",
+    "num_generated_latent_frames": 21,
+    "exit_list_length": 7,
+    "same_step_across_blocks": true,
+    "actual_exit_rule": "all chunks use exit_flags[0]",
+    "last_step_only": false,
+    "nonconstant_list_qualification_fixture": [
+      2,
+      0,
+      3,
+      1,
+      0,
+      3,
+      1
+    ],
+    "fixture_all_chunks_use_index": 2,
+    "per_example_noise_and_score_timestep": true,
+    "global_sample_slot": "micro_index*world_size+rank",
+    "paired_exogenous_tapes": true,
+    "learned_outputs_or_critics_need_not_match": true,
+    "compact_hashes_and_RNG_boundaries_not_full_noise_archives": true
+  },
+  "model": {
+    "generator": "Wan2.1-T2V-1.3B",
+    "teacher": "Wan2.1-T2V-14B",
+    "fake_score": "Wan2.1-T2V-1.3B",
+    "loss": "unchanged native genuine DMD",
+    "gradient_checkpointing": false,
+    "model_eval_mode": "native Trainer eval with gradients, not backbone freezing",
+    "local_attn_size": 18,
+    "sink_size": 0,
+    "chunk_latent_frames": 3,
+    "latent_frames": 21,
+    "training_cache_capacity_frames": 21,
+    "inference_cache_capacity_frames": 18,
+    "context_refresh": "unchanged native no_grad/scheduler behavior, do not fix t=0 mismatch",
+    "historical_KV": "native differentiable graph retained; no paper-inspired detach",
+    "state": {
+      "baseline_enabled": false,
+      "ssf_enabled": true,
+      "num_tokens": 8,
+      "hidden_dim": 1536,
+      "attention_dim": 256,
+      "num_heads": 4,
+      "reader_after_block": 15,
+      "writer_capture_block": 20,
+      "init_seed": 0,
+      "recurrence": "Writer(stopgrad(S_prev), stopgrad(H_ctx)); S_next attached",
+      "F_routing": false,
+      "generic_tokens_not_semantic_slots": true
+    }
+  },
+  "denoising": {
+    "configured": [
+      1000,
+      750,
+      500,
+      250
+    ],
+    "warp": true,
+    "shift": 5.0,
+    "actual": [
+      1000.0,
+      937.5,
+      833.3333129882812,
+      625.0
+    ],
+    "ts_schedule": false,
+    "context_noise": 0
+  },
+  "FSDP": {
+    "strategy": "FULL_SHARD, single host",
+    "wrap_strategy": "size with existing separate StateWriter unit",
+    "use_orig_params": true,
+    "sync_module_states": false,
+    "initialize_branch_identically_before_wrap": true,
+    "mixed_precision": {
+      "param": "bfloat16",
+      "reduce": "float32",
+      "buffer": "float32",
+      "cast_forward_inputs": false,
+      "cast_root_forward_inputs": true
+    },
+    "parameter_CPU_offload": {
+      "generator": false,
+      "fake_score": false,
+      "teacher": false,
+      "text": false
+    },
+    "saved_tensor_activation_CPU_offload": {
+      "generator_cached_attention": true,
+      "generator_cached_block": true,
+      "fake_score": true
+    },
+    "cache_handle_and_grad_enabled_KV_read_clones": "retain current verified implementation"
+  },
+  "checkpoint_policy": {
+    "status": "COMPACT_PROPOSAL_PENDING_APPROVAL",
+    "routine_completed_outer": [
+      200,
+      400,
+      600
+    ],
+    "canceled_future_only_outer": [
+      100,
+      300,
+      500
+    ],
+    "no_historical_deletion": true,
+    "full_components": [
+      "generator_raw",
+      "generator_ema_or_explicit_uninitialized",
+      "fake_score",
+      "generator_optimizer_moments",
+      "critic_optimizer_moments",
+      "all_rank_RNG",
+      "sampler_and_accepted_data_cursor",
+      "counters_and_next_phase",
+      "diffusion_scheduler_config_and_fingerprint",
+      "conditioning_cache",
+      "source_and_config_hashes"
+    ],
+    "raw_and_EMA_separate_names_and_identity": true,
+    "no_duplicate_raw_export_in_size_estimate": true,
+    "accumulation_index_at_commit": 0,
+    "commit_after_full_readback_and_hash": true,
+    "partial_snapshots_not_resumable": true,
+    "emergency_full_snapshots_reserved_per_arm": 1,
+    "additional_emergency_requires_budget_and_approval": true,
+    "max_recompute_nearly_outer": 200,
+    "recompute_gpu_hours_count_toward_budget": true,
+    "pre_first200_replay": "from fully frozen initialization contract; not a raw-only historical resume",
+    "no_raw_only_resume": true,
+    "no_sparse_EMA_reconstruction": true
+  },
+  "assets": {
+    "ODE": "/data/zhouli/Self-Forcing/checkpoints/ode_init.pt",
+    "generator_base": "/data/tuyijing/TTS/Self-Forcing/wan_models/Wan2.1-T2V-1.3B",
+    "teacher": "/data/tuyijing/IP2V/model_weights/model_weights/Wan2.1-T2V-14B",
+    "training_prompts": "/data/wangyuqi_intern26/repos/Self_Gradient_Forcing/prompts/vidprom_filtered_extended.txt",
+    "released_DMD": "/data/tuyijing/TTS/Self-Forcing/checkpoints/self_forcing_dmd.pt"
+  },
+  "do_not_expand": [
+    "new seeds/arms",
+    "F routing",
+    "batch or EMA ablation",
+    "historical-KV redesign",
+    "checkpoint repair",
+    "30s",
+    "full944",
+    "wrong-State",
+    "SVD",
+    "new architecture/loss",
+    "dependency upgrades"
+  ]
+}

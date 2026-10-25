@@ -1,0 +1,20 @@
+{
+  "status": "PASS_G1_B64_SYNC_CANDIDATE_NATIVE_DMD_EMA_RESUME",
+  "formal_policy_change_pending_approval": true,
+  "accumulation_sync_policy": "sync_every_micro_qualification_candidate",
+  "world_size": 2,
+  "nominal_steady_formal_GPUh_per_arm": 362.66578146616615,
+  "measured_training_overheads_GPUh": 4.470967145628399,
+  "instrumented_training_projection_GPUh_per_arm": 367.13674861179453,
+  "forecast_excludes_future_save_and_monitor_overhead": false,
+  "video_generation_scoring_budget_separate": true,
+  "projection_includes_qualification_instrumentation_and_is_not_a_clean_speed_benchmark": true,
+  "observed_G_batch_seconds": 1949.3631525039673,
+  "observed_C_batch_seconds": 698.1247138977051,
+  "qualification_snapshot": "/data/wangyuqi_intern26/ssf_runs/phaseG_execution_20261024_225742/qualification/real_dmd_accumulation/attempt_01/complete_qualification.pt",
+  "qualification_snapshot_bytes": 39793504345,
+  "attempt": 1,
+  "attempt_directory": "/data/wangyuqi_intern26/ssf_runs/phaseG_execution_20261024_225742/qualification/real_dmd_accumulation/attempt_01",
+  "formal_training_not_started": true,
+  "stage_B_requires_cost_and_storage_forecast_then_approval": true
+}

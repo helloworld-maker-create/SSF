@@ -1,0 +1,140 @@
+{
+  "version": "SSF-PhaseG-v1.2-FINAL-PENDING-APPROVAL",
+  "status": "PROPOSAL_PENDING_APPROVAL",
+  "created_at": "2026-10-24T22:40:39.320669+08:00",
+  "execution_authorized": false,
+  "endpoint": "Baseline600 EMA, raw is comparison only; no posthoc raw substitution",
+  "monitoring_outers": [
+    200,
+    400
+  ],
+  "final_outer": 600,
+  "monitor_prompt_ids": [
+    "p0311-51bd21fba64c",
+    "p0287-d58e7254d5a7",
+    "p0806-aeaab0431f98",
+    "p0345-7dbdf68ac0bb",
+    "p0103-ce607f55bc00",
+    "p0169-2f9950b3d9a7",
+    "p0187-8671e9608a72",
+    "p0759-2fa35850d017"
+  ],
+  "seeds": [
+    2026,
+    2027
+  ],
+  "n_baseline_videos": 16,
+  "n_action_applicable_videos": 8,
+  "action_prompt_ids": [
+    "p0311-51bd21fba64c",
+    "p0287-d58e7254d5a7",
+    "p0169-2f9950b3d9a7",
+    "p0187-8671e9608a72"
+  ],
+  "reference_sources": [
+    "ODE from ODE48x2",
+    "released EMA Local18 same16",
+    "Baseline600 raw",
+    "Baseline600 EMA"
+  ],
+  "blind_pack_unique_model_videos": 64,
+  "ODE_regenerated_for_health": 0,
+  "rubric": {
+    "O": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "meaning": [
+        "wrong/absent",
+        "recognizable with substantial problems",
+        "clear/plausible"
+      ]
+    },
+    "A": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "non_applicable": "NA",
+      "meaning": [
+        "absent/wrong action",
+        "partial/ambiguous",
+        "clear requested action"
+      ]
+    },
+    "T": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "meaning": [
+        "severe unusable temporal failure",
+        "localized issues but usable",
+        "coherent"
+      ],
+      "zero_must_count_severe": true,
+      "not_diffusion_timestep": true,
+      "motion_requested_widespread_freeze_or_repetition": "severe temporal issue plus action-freeze flag",
+      "reasonable_static_prompt": "not T0 merely because static"
+    }
+  },
+  "severe_count": "per-video UNION(T==0,severe deformation,severe identity/object failure); no double count",
+  "pass": {
+    "O_ge1_min": 12,
+    "O_eq2_min": 8,
+    "A_ge1_min": 6,
+    "A_eq2_min": 4,
+    "severe_max": 2,
+    "action_freeze_max": 2
+  },
+  "clear_fail": {
+    "O_ge1_max": 7,
+    "severe_min": 6,
+    "action": "retain previous broad action-noncompletion interpretation; no new numeric test"
+  },
+  "ODE_relative": {
+    "scale": "original0..2 human rating",
+    "large_decline": 0.5,
+    "both_object_and_action_decline": "FAIL",
+    "one_only_or_conflicting_boundary": "INCONCLUSIVE",
+    "no_every_metric_must_beat_ODE": true
+  },
+  "ambiguous": "INCONCLUSIVE; never force PASS or expand panel",
+  "published_reference_failure": "flag applicability; retain task and fixed thresholds; insufficient evidence does not allow SSF",
+  "reviewers": {
+    "AI": "explicitly AI, de-identified procedural review, not an independent human",
+    "human": "user personally, sole human reviewer",
+    "AI_scores_hidden_until_user_scores_frozen": true,
+    "model_mapping_hidden_until_user_scores_frozen": true,
+    "familiarity_and_blinding_limits_disclosed": true
+  },
+  "required_pause": {
+    "state": "AWAITING_USER_HEALTH_REVIEW",
+    "release_all_GPU": true,
+    "destroy_process_groups": true,
+    "export_full_anonymous_pack_and_blank_scores": true,
+    "exit": true,
+    "no_auto_GPU_wait_controller": true
+  },
+  "interfaces": {
+    "blind": "health_review/blind/",
+    "private": "health_review/private/",
+    "user_scores": "user_scores_frozen.json",
+    "gate": "health_gate_result.json",
+    "approval": "stage_c_approval.json"
+  },
+  "launch_SSF_requires": [
+    "scientific contract approved",
+    "applicable storage contract approved",
+    "user scores actually frozen",
+    "frozen health gate PASS",
+    "real explicit stageC execution approval",
+    "fresh resource/budget preflight"
+  ],
+  "never_fabricate_scores_approval_or_PASS": true,
+  "FAIL_or_INCONCLUSIVE": "stop Goal; no SSF,seed/LR change or budget extension"
+}
