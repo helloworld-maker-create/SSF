@@ -1,0 +1,27 @@
+__pycache__
+*.egg-info
+
+wan_models
+checkpoints
+# Handoff: code only. Model/data/video payloads are transferred separately.
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.mp4
+*.mov
+*.avi
+*.npy
+*.npz
+.env
+.env.*
+!.env.example
+/runs/
+/ssf_runs/
+/outputs/
+/cluster/assets.local.json
+/cluster/original_run/training/
+/cluster/original_run/generation/
+/cluster/original_run/reference/
+/cluster/original_run/authorizations/
