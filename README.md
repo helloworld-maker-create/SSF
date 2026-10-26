@@ -1,3 +1,5 @@
+> **本仓库的集群训练入口：** 首次运行 `./launch.sh --init` 配置权重与输出路径，之后运行 `./launch.sh`。详见 [集群一键启动说明](cluster/README.md)；原始上游训练说明保留在下方。
+
 <p align="center">
 <h1 align="center">Self Forcing</h1>
 <h3 align="center">Bridging the Train-Test Gap in Autoregressive Video Diffusion</h3>

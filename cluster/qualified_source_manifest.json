@@ -2,7 +2,7 @@
   "created_at": "2026-10-25T20:01:28.878737+08:00",
   "original_base_commit": "33593df3e81fa3ec10239271dd2c100facac6de1",
   "source_file_count": 95,
-  "algorithm_source_exactly_matches_qualified_snapshot": true,
+  "algorithm_source_exactly_matches_qualified_snapshot": false,
   "files": [
     {
       "path": ".gitignore",
@@ -392,8 +392,29 @@
     {
       "path": ".gitignore",
       "qualified_SHA256": "068a83029695aad08ea55a81f0b117395fb2f26167a5386583dd112d63b71f68",
-      "handoff_SHA256": "b67946549dd7aee1daa7c826c9d77416b7c2a25ee9e28ab91dd07e11fab6f153",
+      "handoff_SHA256": "58d3904f20fe4d9992c9f960bb42556785d333eca1f46dbf024203a210183676",
       "reason": "Exclude weights/data/videos/credentials; scientific source unchanged"
+    },
+    {
+      "path": "README.md",
+      "qualified_SHA256": "68e3596953c9f9dc2f42863a123fd5325f6007c62d8a7fd92e00cf7b215ef19d",
+      "handoff_SHA256": "6211d2034ddadc11ef285a160262423cbd3124d25e22f77727e0eb5b9b7340aa",
+      "reason": "Add a pointer to the portable cluster launcher; upstream documentation preserved below"
     }
-  ]
+  ],
+  "portability_overrides": [
+    {
+      "path": "utils/wan_wrapper.py",
+      "qualified_SHA256": "c7fd2e75b285e8f10a1a8c6b0d0ef10505ca88cc2b98ac926085f2645ceb66cd",
+      "handoff_SHA256": "e921ae92c400633ab080a0e9575f62037350d5901a5442de28c4430e4c080e6e",
+      "reason": "Resolve the existing 1.3B/T5/tokenizer/VAE paths through optional SSF_WAN_1_3B; default layout and tensor math unchanged"
+    },
+    {
+      "path": "wan/modules/attention.py",
+      "qualified_SHA256": "02ad719a76e6bdec79d18fc62b094ef2ad7c28b2d593c9f395ae1226041b7c9d",
+      "handoff_SHA256": "e0b4c1037b185ae21079b19816f06aa19383c33adf10e293fb834fbada88dcf6",
+      "reason": "Accept the native FA3 output Tensor and legacy (output, aux) tuple without indexing away the packed token dimension"
+    }
+  ],
+  "native_tensor_math_changed": false
 }

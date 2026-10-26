@@ -27,12 +27,14 @@ def sha(path):
 def check_code():
     source = read(REPO / 'cluster/qualified_source_manifest.json')
     overrides = {x['path']: x for x in source.get('packaging_overrides', [])}
+    portability = {x['path']: x for x in source.get('portability_overrides', [])}
+    effective_overrides = {**overrides, **portability}
     checked = []
     for item in source['files']:
         path = REPO / item['path']
         if not path.resolve().is_relative_to(REPO) or path.is_symlink():
             raise ValueError('Source escaped checkout: ' + item['path'])
-        expected = overrides.get(item['path'], {}).get('handoff_SHA256', item['SHA256'])
+        expected = effective_overrides.get(item['path'], {}).get('handoff_SHA256', item['SHA256'])
         if sha(path) != expected:
             raise ValueError('Source mismatch: ' + item['path'])
         if path.suffix == '.py':
@@ -47,8 +49,14 @@ def check_code():
             raise ValueError('Archive mismatch: ' + item['path'])
         if path.suffix == '.py':
             compile(path.read_text(), str(path), 'exec')
+    portable = [REPO / 'cluster' / name for name in ['launch.py', 'node_probe.py', 'topology.py', 'supervise.py']]
+    portable.extend((REPO / 'cluster/runtime').glob('*.py'))
+    for path in portable:
+        compile(path.read_text(), str(path), 'exec')
     return dict(qualified_source_files=len(checked), archived_files=len(archived['files']),
-                packaging_only_overrides=list(overrides), model_code_changed=False)
+                portable_entry_files=len(portable),
+                packaging_only_overrides=list(overrides), portability_overrides=list(portability),
+                model_code_changed=bool(portability))
 
 
 def check_assets(config, verify_bytes):

@@ -1,4 +1,6 @@
 import types
+import os
+from pathlib import Path
 from typing import List, Optional
 import torch
 from torch import nn
@@ -12,6 +14,11 @@ from wan.modules.causal_model import CausalWanModel
 from utils.persistent_state import PersistentStateConfig, build_state_modules
 
 
+def wan_1_3b_path(relative=""):
+    """Optional cluster asset root; preserve the original default layout."""
+    return str(Path(os.environ.get("SSF_WAN_1_3B", "wan_models/Wan2.1-T2V-1.3B")) / relative)
+
+
 class WanTextEncoder(torch.nn.Module):
     def __init__(self) -> None:
         super().__init__()
@@ -23,12 +30,12 @@ class WanTextEncoder(torch.nn.Module):
             device=torch.device('cpu')
         ).eval().requires_grad_(False)
         self.text_encoder.load_state_dict(
-            torch.load("wan_models/Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth",
+            torch.load(wan_1_3b_path("models_t5_umt5-xxl-enc-bf16.pth"),
                        map_location='cpu', weights_only=False)
         )
 
         self.tokenizer = HuggingfaceTokenizer(
-            name="wan_models/Wan2.1-T2V-1.3B/google/umt5-xxl/", seq_len=512, clean='whitespace')
+            name=wan_1_3b_path("google/umt5-xxl"), seq_len=512, clean='whitespace')
 
     @property
     def device(self):
@@ -67,7 +74,7 @@ class WanVAEWrapper(torch.nn.Module):
 
         # init model
         self.model = _video_vae(
-            pretrained_path="wan_models/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+            pretrained_path=wan_1_3b_path("Wan2.1_VAE.pth"),
             z_dim=16,
         ).eval().requires_grad_(False)
 
@@ -129,6 +136,8 @@ class WanDiffusionWrapper(torch.nn.Module):
         super().__init__()
 
         pretrained_path = model_path if model_path is not None else f"wan_models/{model_name}/"
+        if model_path is None and model_name == "Wan2.1-T2V-1.3B":
+            pretrained_path = wan_1_3b_path()
         if is_causal:
             self.model = CausalWanModel.from_pretrained(
                 pretrained_path, local_attn_size=local_attn_size, sink_size=sink_size)

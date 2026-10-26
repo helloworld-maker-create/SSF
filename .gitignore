@@ -21,6 +21,10 @@ checkpoints
 /ssf_runs/
 /outputs/
 /cluster/assets.local.json
+/cluster/site.local.json
+/cluster/*.local.json
+/cluster/run_receipts/
+/.ssf_deploy/
 /cluster/original_run/training/
 /cluster/original_run/generation/
 /cluster/original_run/reference/

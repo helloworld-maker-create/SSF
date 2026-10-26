@@ -1,0 +1,25 @@
+{
+  "transport": "ssh",
+  "inventory": "~/.config/gpuall/hosts",
+  "hosts": [],
+  "nodes": 1,
+  "gpus_per_node": 4,
+  "python": "/REPLACE/python",
+  "repo": "/REPLACE/SSF",
+  "output": "/REPLACE/persistent/ssf_runs",
+  "assets": {
+    "wan_1_3b": "/REPLACE/Wan2.1-T2V-1.3B",
+    "teacher_14b": "/REPLACE/Wan2.1-T2V-14B",
+    "ode_init": "/REPLACE/ode_init.pt",
+    "training_prompts": "/REPLACE/vidprom_filtered_extended.txt"
+  },
+  "ssh_user": null,
+  "ssh_identity": null,
+  "min_gpu_free_gib": 70,
+  "host_reserve_gib": 128,
+  "min_output_free_gib": 320,
+  "wall_hours": 24,
+  "master_port": 29647,
+  "environment": {},
+  "ssf_review": null
+}
