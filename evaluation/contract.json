@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "scope": "Evaluation of existing lossless videos only; no generator/model checkpoint upload or loading",
+  "settings": {
+    "width": 832,
+    "height": 480,
+    "video_frames": 81,
+    "fps": 16,
+    "latent_frames": 21,
+    "chunk_latent_frames": 3,
+    "total_chunks": 7,
+    "local_attn_size": 18,
+    "sink_size": 0,
+    "actual_denoising": [
+      1000.0,
+      937.5,
+      833.3333129882812,
+      625.0
+    ],
+    "checkpointing": false,
+    "encoding": "lossless RGB; unchanged VAE and native4step renderer"
+  },
+  "configured_denoising": [
+    1000,
+    750,
+    500,
+    250
+  ],
+  "inference_seeds": [
+    2026,
+    2027
+  ],
+  "metrics": [
+    "subject_consistency",
+    "background_consistency",
+    "object_class",
+    "multiple_objects",
+    "human_action",
+    "dynamic_degree",
+    "motion_smoothness",
+    "imaging_quality",
+    "overall_consistency"
+  ],
+  "text_preprocessing": "Original exact prompt; no expansion",
+  "weight_choice": "Matched raw or matched EMA, explicitly declared by input config",
+  "imaging_quality_preprocessing_mode": "longer",
+  "per_video_score_scale": {
+    "imaging_quality": 0.01
+  },
+  "display_units": "native per-dimension unit score times100; not official normalization",
+  "metric_seed": 2026,
+  "expected_vbench_version": "0.1.5",
+  "metric_module_sha256": {
+    "subject_consistency.py": "55f5c9a3e5be543380a709b94712903fa67a76340c3c0cb2414ac090dbd1b78d",
+    "background_consistency.py": "7def92057819df0dad01c857eecf3b39b8b555c8cdfe881a672cc2b19dc226b4",
+    "temporal_flickering.py": "c2c892034d1652c9390f213308c18b77ae20a87bd52fc50a125294ce83af4e83",
+    "motion_smoothness.py": "df15c9bb078bcb514c2fcee62ffe5d497340a4ab0ea9a37abfe061adacd56664",
+    "dynamic_degree.py": "2e93d3a7af38bfbe459c19c9d127894f687424a0bc534dbf7e6571d17b24dff7",
+    "aesthetic_quality.py": "caf86008a3e56974524d286e5b968a31536e315005d0b20f06fae9d5d37da539",
+    "imaging_quality.py": "ac6c648cb4d5e82cd29c63be04977e9288c3540558cf12f979e66bef3e1f9e3a",
+    "object_class.py": "8d4c4a7feee52503e3d27f8aba0ed467cbc356ed75da2598367b572237e05db2",
+    "multiple_objects.py": "fa5047aa560158f017e46dea3ae763ed083df08ece63e47f61a7ea4fc55be672",
+    "human_action.py": "4cee71a1e09e0b2f7e1a8126300c9250be19e3866f49004c8b69b4a5a15e8945",
+    "color.py": "03baffc12508fd7ce6c70a227d6794bbc7152c24ba2d2c447a816974466db3d7",
+    "spatial_relationship.py": "26f09a111dac904d1a92ae5bd1c332a029cebd22610d62376a09d7d634950270",
+    "scene.py": "f14c423710c812af2be953db619ed6e8b478acdc44f1df775815adfa30171965",
+    "temporal_style.py": "9f9e950efca4673721d0a07ea83137be9ebdc9aef2364f412300ba979beef57a",
+    "appearance_style.py": "166b291abe55b0ac28ff4c937469e42cc2aa135c308ab06665518837956deb2a",
+    "overall_consistency.py": "325beb4503699b08d441a467710240097c15c2267fe92dbed1ed8cdfaa96103e"
+  },
+  "official_metadata": "../cluster/original_run/vendor/official_vbench_prompt_metadata.json",
+  "official_metadata_sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd",
+  "subset_total_prohibited": true,
+  "missing_values": "explicitly missing, never replaced with zero",
+  "generation_noise_pairing": "verified only when both supplied generation records carry matching initial and renoise traces; otherwise UNVERIFIED",
+  "frame_difference": "existing11-frame RGB-mean gray MAE proxy,0..255; not direct motion or camera separation"
+}

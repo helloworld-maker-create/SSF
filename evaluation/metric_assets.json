@@ -1,0 +1,162 @@
+{
+  "submodules": {
+    "subject_consistency": {
+      "repo_or_dir": "${CACHE}/dino_model/facebookresearch_dino_main/",
+      "path": "${CACHE}/dino_model/dino_vitbase16_pretrain.pth",
+      "model": "dino_vitb16",
+      "source": "local",
+      "read_frame": false
+    },
+    "background_consistency": [
+      "${CACHE}/clip_model/ViT-B-32.pt",
+      false
+    ],
+    "human_action": [
+      "${CACHE}/umt_model/l16_ptk710_ftk710_ftk400_f16_res224.pth"
+    ],
+    "motion_smoothness": {
+      "config": "${VBENCH}/third_party/amt/cfgs/AMT-S.yaml",
+      "ckpt": "${CACHE}/amt_model/amt-s.pth"
+    },
+    "dynamic_degree": {
+      "model": "${CACHE}/raft_model/models/raft-things.pth"
+    },
+    "aesthetic_quality": [
+      "${CACHE}/clip_model/ViT-L-14.pt",
+      "${CACHE}/aesthetic_model/emb_reader"
+    ],
+    "imaging_quality": {
+      "model_path": "${CACHE}/pyiqa_model/musiq_spaq_ckpt-358bb6af.pth"
+    },
+    "appearance_style": {
+      "name": "${CACHE}/clip_model/ViT-B-32.pt"
+    },
+    "scene": {
+      "pretrained": "${CACHE}/caption_model/tag2text_swin_14m.pth",
+      "image_size": 384,
+      "vit": "swin_b"
+    },
+    "object_class": {
+      "model_weight": "${CACHE}/grit_model/grit_b_densecap_objectdet.pth"
+    },
+    "multiple_objects": {
+      "model_weight": "${CACHE}/grit_model/grit_b_densecap_objectdet.pth"
+    },
+    "color": {
+      "model_weight": "${CACHE}/grit_model/grit_b_densecap_objectdet.pth"
+    },
+    "spatial_relationship": {
+      "model_weight": "${CACHE}/grit_model/grit_b_densecap_objectdet.pth"
+    },
+    "temporal_style": {
+      "pretrain": "${CACHE}/ViCLIP/ViClip-InternVid-10M-FLT.pth"
+    },
+    "overall_consistency": {
+      "pretrain": "${CACHE}/ViCLIP/ViClip-InternVid-10M-FLT.pth"
+    },
+    "temporal_flickering": []
+  },
+  "verified_assets": {
+    "${CACHE}/aesthetic_model/emb_reader/sa_0_4_vit_l_14_linear.pth": {
+      "sha256": "2cd4e60f4f24ae3bcd57b847b13c1f3ba27edc28cc1a7f9ce74ee9f421243cba",
+      "bytes": 4071
+    },
+    "${CACHE}/amt_model/amt-s.pth": {
+      "sha256": "07e7e03405c213fe4405678db9b42d05671e48c56faf6a441b99bb0047d3cf77",
+      "bytes": 12038359
+    },
+    "${CACHE}/clip_model/ViT-B-32.pt": {
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "bytes": 353976522
+    },
+    "${CACHE}/clip_model/ViT-L-14.pt": {
+      "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+      "bytes": 932768134
+    },
+    "${CACHE}/dino_model/dino_vitbase16_pretrain.pth": {
+      "sha256": "bf34ad0f424b9029b593e8dc3ed553bf26e88bcba0d32bf3e62a6209cb64c85e",
+      "bytes": 343242485
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/eval_copy_detection.py": {
+      "sha256": "77b44b8a82114c156dc945b4aa77157ff5582ec35736e552299e4cb03b12898c",
+      "bytes": 12631
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/eval_image_retrieval.py": {
+      "sha256": "5a8d661ec0b3b6384a8cffc8970835a038b09d162a77eaf3f42a10b6c5586f8f",
+      "bytes": 9288
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/eval_knn.py": {
+      "sha256": "b23ec5ca3cb64b1453be8e4dacdc41b24e035a98e081e707aacbcc650d6b3d0e",
+      "bytes": 11128
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/eval_linear.py": {
+      "sha256": "747e8a8861d65fc675d4d382f48678febd352e2ddaa07c1bd91eef53c176884b",
+      "bytes": 13256
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/eval_video_segmentation.py": {
+      "sha256": "f17eb52954b89e3bc5cef99186fafe23826bd97810c9de6953715832b94b1d67",
+      "bytes": 11835
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/hubconf.py": {
+      "sha256": "fa80babf82c71d2123e23b05061eb1991a1fbc9877238f250b2a25023e910f72",
+      "bytes": 5653
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/main_dino.py": {
+      "sha256": "74ef2afb9e16ab859370e1eb18455de0797d1202851c92d8191f06ccc05b28c7",
+      "bytes": 22945
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/run_with_submitit.py": {
+      "sha256": "fb14a2c6e90702f768fa7d70c63688c7c7d05ec3fcb2e2a4002ca5daa800e104",
+      "bytes": 4374
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/utils.py": {
+      "sha256": "962a97e1acda1c986dfd921275325e4083f9016dddadcf018f1ccf03fa600eab",
+      "bytes": 28039
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/video_generation.py": {
+      "sha256": "26a02a7c52f9ddd47c1f4516426426c73d35a8fbaf0c26417ebc6b0d6a1c433c",
+      "bytes": 13669
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/vision_transformer.py": {
+      "sha256": "cfb7217c661599f09bc35bb1893ecb79ed0a2e1ea75634225d61227c6585e586",
+      "bytes": 11149
+    },
+    "${CACHE}/dino_model/facebookresearch_dino_main/visualize_attention.py": {
+      "sha256": "f908e5c1857ef36d7f24c86a9c5a22dae2628bf1b6c46af4b9f608f839a7d6c1",
+      "bytes": 9389
+    },
+    "${CACHE}/pyiqa_model/musiq_spaq_ckpt-358bb6af.pth": {
+      "sha256": "358bb6af275e28ea56821d44fb55c6cb83645db11f394d3ad65b2d149965ab50",
+      "bytes": 108610983
+    },
+    "${CACHE}/raft_model/models/raft-things.pth": {
+      "sha256": "fcfa4125d6418f4de95d84aec20a3c5f4e205101715a79f193243c186ac9a7e1",
+      "bytes": 21108000
+    },
+    "${VBENCH}/third_party/amt/cfgs/AMT-S.yaml": {
+      "sha256": "a77746791b1d02c839f40791fb82adb28c5058cf3735b2657a4a965a789ce0a8",
+      "bytes": 1128
+    },
+    "${CACHE}/ViCLIP/ViClip-InternVid-10M-FLT.pth": {
+      "sha256": "7a4d6ad6eac6632db3693f4b97f9f8f6445b65b1e139a6fc6686150522238c56",
+      "bytes": 1710545812
+    },
+    "${CACHE}/caption_model/tag2text_swin_14m.pth": {
+      "sha256": "4ce96f0ce98f940a6680d567f66a38ccc9ca8c4e638e5f5c5c2e881a0e3502ac",
+      "bytes": 4478705095
+    },
+    "${CACHE}/grit_model/grit_b_densecap_objectdet.pth": {
+      "sha256": "53b6e9b3fd948eac55b574c9b6f94ad0743dff46ba449df7ac2d33009ee92ef1",
+      "bytes": 417381733
+    },
+    "${CACHE}/umt_model/l16_ptk710_ftk710_ftk400_f16_res224.pth": {
+      "sha256": "bfee78a03bf806fbc0c216309e8f92792011b7db6556fa860e9d869c1e69fecd",
+      "bytes": 607024201
+    }
+  },
+  "policy": "Local paths only; no checkpoint bytes included; reuse audited metric identities"
+}

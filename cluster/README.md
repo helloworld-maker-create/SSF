@@ -1,5 +1,7 @@
 # 集群交接说明
 
+自动评测与数据见 [evaluation/README.md](../evaluation/README.md)：可直接对服务器本地 lossless 原片评分与生成配对报告。权重、原片和训练数据不通过 Git 传输；48/96/944 prompt 清单与官方 metadata 已包含。
+
 ## 已包含
 
 - 仓库根目录：实际通过B1/B1.1/B2和真实Wan/DMD/FSDP验证的完整模型、KV handle、State及原生loss源代码；不是仅上游的干净代码。

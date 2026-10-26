@@ -1,0 +1,943 @@
+{
+  "name": "phaseCD96",
+  "description": "Previously frozen Phase C+D/F panel; not an official Total",
+  "inference_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "prompts": [
+    {
+      "prompt": "a laptop, frozen in time",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "a laptop, frozen in time-0.mp4",
+      "prompt_id": "p0002-fda810d6514c",
+      "source_index": 2
+    },
+    {
+      "prompt": "A tranquil tableau of cliff",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "A tranquil tableau of cliff-0.mp4",
+      "prompt_id": "p0008-4677f6f65d1c",
+      "source_index": 8
+    },
+    {
+      "prompt": "indoor gymnasium, frozen in time",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "indoor gymnasium, frozen in time-0.mp4",
+      "prompt_id": "p0012-6f411bcff692",
+      "source_index": 12
+    },
+    {
+      "prompt": "A tranquil tableau of a bench",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "A tranquil tableau of a bench-0.mp4",
+      "prompt_id": "p0022-83425faf364c",
+      "source_index": 22
+    },
+    {
+      "prompt": "A tranquil tableau of a bunch of grapes",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "A tranquil tableau of a bunch of grapes-0.mp4",
+      "prompt_id": "p0028-a1e28948667b",
+      "source_index": 28
+    },
+    {
+      "prompt": "A tranquil tableau of a vintage rocking chair was placed on the porch",
+      "dims": [
+        "temporal_flickering"
+      ],
+      "video": "A tranquil tableau of a vintage rocking chair was placed on the porch-0.mp4",
+      "prompt_id": "p0036-dfb5c512a752",
+      "source_index": 36
+    },
+    {
+      "prompt": "a couch and a potted plant",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a couch and a potted plant-0.mp4",
+      "prompt_id": "p0086-760a08829a8e",
+      "source_index": 86
+    },
+    {
+      "prompt": "a tv and a laptop",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a tv and a laptop-0.mp4",
+      "prompt_id": "p0088-e563f7c8d6da",
+      "source_index": 88
+    },
+    {
+      "prompt": "a laptop and a remote",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a laptop and a remote-0.mp4",
+      "prompt_id": "p0089-1b15c9f670c2",
+      "source_index": 89
+    },
+    {
+      "prompt": "a tie and a suitcase",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a tie and a suitcase-0.mp4",
+      "prompt_id": "p0098-a45794f29cfa",
+      "source_index": 98
+    },
+    {
+      "prompt": "scissors and a teddy bear",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "scissors and a teddy bear-0.mp4",
+      "prompt_id": "p0101-449dc27864c4",
+      "source_index": 101
+    },
+    {
+      "prompt": "a frisbee and skis",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a frisbee and skis-0.mp4",
+      "prompt_id": "p0103-ce607f55bc00",
+      "source_index": 103
+    },
+    {
+      "prompt": "a snowboard and a sports ball",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a snowboard and a sports ball-0.mp4",
+      "prompt_id": "p0105-6742c457edd6",
+      "source_index": 105
+    },
+    {
+      "prompt": "a baseball glove and a skateboard",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a baseball glove and a skateboard-0.mp4",
+      "prompt_id": "p0109-7d34ee704cd9",
+      "source_index": 109
+    },
+    {
+      "prompt": "a tennis racket and a bottle",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a tennis racket and a bottle-0.mp4",
+      "prompt_id": "p0112-7e2b17e25b53",
+      "source_index": 112
+    },
+    {
+      "prompt": "a fork and a potted plant",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "a fork and a potted plant-0.mp4",
+      "prompt_id": "p0132-6e7c8efef0c2",
+      "source_index": 132
+    },
+    {
+      "prompt": "an orange and a clock",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "an orange and a clock-0.mp4",
+      "prompt_id": "p0139-a50f3dbd0dec",
+      "source_index": 139
+    },
+    {
+      "prompt": "broccoli and a backpack",
+      "dims": [
+        "multiple_objects"
+      ],
+      "video": "broccoli and a backpack-0.mp4",
+      "prompt_id": "p0140-7897ddd92854",
+      "source_index": 140
+    },
+    {
+      "prompt": "A person is skateboarding",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is skateboarding-0.mp4",
+      "prompt_id": "p0169-2f9950b3d9a7",
+      "source_index": 169
+    },
+    {
+      "prompt": "A person is catching or throwing frisbee",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is catching or throwing frisbee-0.mp4",
+      "prompt_id": "p0187-8671e9608a72",
+      "source_index": 187
+    },
+    {
+      "prompt": "A person is filling eyebrows",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is filling eyebrows-0.mp4",
+      "prompt_id": "p0190-064bf7235ebe",
+      "source_index": 190
+    },
+    {
+      "prompt": "A person is ironing",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is ironing-0.mp4",
+      "prompt_id": "p0213-adcfbac10db2",
+      "source_index": 213
+    },
+    {
+      "prompt": "A person is trimming or shaving beard",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is trimming or shaving beard-0.mp4",
+      "prompt_id": "p0216-167795b66b8b",
+      "source_index": 216
+    },
+    {
+      "prompt": "A person is crawling baby",
+      "dims": [
+        "human_action"
+      ],
+      "video": "A person is crawling baby-0.mp4",
+      "prompt_id": "p0227-6232afce1a50",
+      "source_index": 227
+    },
+    {
+      "prompt": "a person walking in the snowstorm",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a person walking in the snowstorm-0.mp4",
+      "prompt_id": "p0261-3c3bf0c255e3",
+      "source_index": 261
+    },
+    {
+      "prompt": "a bicycle leaning against a tree",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a bicycle leaning against a tree-0.mp4",
+      "prompt_id": "p0264-7785df0782f0",
+      "source_index": 264
+    },
+    {
+      "prompt": "a motorcycle turning a corner",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a motorcycle turning a corner-0.mp4",
+      "prompt_id": "p0273-688140a623ac",
+      "source_index": 273
+    },
+    {
+      "prompt": "an airplane accelerating to gain speed",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "an airplane accelerating to gain speed-0.mp4",
+      "prompt_id": "p0280-0bd4049c994f",
+      "source_index": 280
+    },
+    {
+      "prompt": "a bus turning a corner",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a bus turning a corner-0.mp4",
+      "prompt_id": "p0281-badab853ec7f",
+      "source_index": 281
+    },
+    {
+      "prompt": "a bus accelerating to gain speed",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a bus accelerating to gain speed-0.mp4",
+      "prompt_id": "p0283-425de634994c",
+      "source_index": 283
+    },
+    {
+      "prompt": "a truck turning a corner",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a truck turning a corner-0.mp4",
+      "prompt_id": "p0287-d58e7254d5a7",
+      "source_index": 287
+    },
+    {
+      "prompt": "a bird soaring gracefully in the sky",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a bird soaring gracefully in the sky-0.mp4",
+      "prompt_id": "p0295-1a58efa8f860",
+      "source_index": 295
+    },
+    {
+      "prompt": "a horse galloping across an open field",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a horse galloping across an open field-0.mp4",
+      "prompt_id": "p0307-ba3272344bbb",
+      "source_index": 307
+    },
+    {
+      "prompt": "a sheep taking a peaceful walk",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "a sheep taking a peaceful walk-0.mp4",
+      "prompt_id": "p0311-51bd21fba64c",
+      "source_index": 311
+    },
+    {
+      "prompt": "an elephant taking a peaceful walk",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "an elephant taking a peaceful walk-0.mp4",
+      "prompt_id": "p0317-d9474a6adddc",
+      "source_index": 317
+    },
+    {
+      "prompt": "an elephant running to join a herd of its kind",
+      "dims": [
+        "dynamic_degree",
+        "motion_smoothness",
+        "subject_consistency"
+      ],
+      "video": "an elephant running to join a herd of its kind-0.mp4",
+      "prompt_id": "p0318-d10846716eff",
+      "source_index": 318
+    },
+    {
+      "prompt": "a bicycle",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a bicycle-0.mp4",
+      "prompt_id": "p0330-99511b7402c1",
+      "source_index": 330
+    },
+    {
+      "prompt": "an airplane",
+      "dims": [
+        "object_class"
+      ],
+      "video": "an airplane-0.mp4",
+      "prompt_id": "p0333-e4a02badaa19",
+      "source_index": 333
+    },
+    {
+      "prompt": "a truck",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a truck-0.mp4",
+      "prompt_id": "p0336-be1e12420ef0",
+      "source_index": 336
+    },
+    {
+      "prompt": "a bird",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a bird-0.mp4",
+      "prompt_id": "p0343-9e5b3d53982c",
+      "source_index": 343
+    },
+    {
+      "prompt": "a dog",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a dog-0.mp4",
+      "prompt_id": "p0345-7dbdf68ac0bb",
+      "source_index": 345
+    },
+    {
+      "prompt": "an elephant",
+      "dims": [
+        "object_class"
+      ],
+      "video": "an elephant-0.mp4",
+      "prompt_id": "p0349-8b94b960d779",
+      "source_index": 349
+    },
+    {
+      "prompt": "skis",
+      "dims": [
+        "object_class"
+      ],
+      "video": "skis-0.mp4",
+      "prompt_id": "p0359-fb1d6060d754",
+      "source_index": 359
+    },
+    {
+      "prompt": "a snowboard",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a snowboard-0.mp4",
+      "prompt_id": "p0360-9c0af891499f",
+      "source_index": 360
+    },
+    {
+      "prompt": "a spoon",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a spoon-0.mp4",
+      "prompt_id": "p0373-1736abb91ae7",
+      "source_index": 373
+    },
+    {
+      "prompt": "a potted plant",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a potted plant-0.mp4",
+      "prompt_id": "p0387-b1fca003a545",
+      "source_index": 387
+    },
+    {
+      "prompt": "a keyboard",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a keyboard-0.mp4",
+      "prompt_id": "p0394-5107ba0d22f4",
+      "source_index": 394
+    },
+    {
+      "prompt": "a sink",
+      "dims": [
+        "object_class"
+      ],
+      "video": "a sink-0.mp4",
+      "prompt_id": "p0399-8cb7aa529233",
+      "source_index": 399
+    },
+    {
+      "prompt": "a yellow bicycle",
+      "dims": [
+        "color"
+      ],
+      "video": "a yellow bicycle-0.mp4",
+      "prompt_id": "p0411-bf8895c0308a",
+      "source_index": 411
+    },
+    {
+      "prompt": "a purple bicycle",
+      "dims": [
+        "color"
+      ],
+      "video": "a purple bicycle-0.mp4",
+      "prompt_id": "p0413-7de987bb3f27",
+      "source_index": 413
+    },
+    {
+      "prompt": "a black bicycle",
+      "dims": [
+        "color"
+      ],
+      "video": "a black bicycle-0.mp4",
+      "prompt_id": "p0415-d720ac74ebff",
+      "source_index": 415
+    },
+    {
+      "prompt": "a yellow car",
+      "dims": [
+        "color"
+      ],
+      "video": "a yellow car-0.mp4",
+      "prompt_id": "p0420-d10401e463eb",
+      "source_index": 420
+    },
+    {
+      "prompt": "an orange bowl",
+      "dims": [
+        "color"
+      ],
+      "video": "an orange bowl-0.mp4",
+      "prompt_id": "p0461-8a77565f849d",
+      "source_index": 461
+    },
+    {
+      "prompt": "a purple chair",
+      "dims": [
+        "color"
+      ],
+      "video": "a purple chair-0.mp4",
+      "prompt_id": "p0471-163ad4e780a0",
+      "source_index": 471
+    },
+    {
+      "prompt": "The bund Shanghai, oil painting",
+      "dims": [
+        "aesthetic_quality",
+        "appearance_style",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "The bund Shanghai, oil painting-0.mp4",
+      "prompt_id": "p0503-4d31eaf07c77",
+      "source_index": 503
+    },
+    {
+      "prompt": "The bund Shanghai, black and white",
+      "dims": [
+        "appearance_style"
+      ],
+      "video": "The bund Shanghai, black and white-0.mp4",
+      "prompt_id": "p0505-fd0eb9eaef90",
+      "source_index": 505
+    },
+    {
+      "prompt": "a shark is swimming in the ocean, oil painting",
+      "dims": [
+        "appearance_style"
+      ],
+      "video": "a shark is swimming in the ocean, oil painting-0.mp4",
+      "prompt_id": "p0512-0e6b41fc4c98",
+      "source_index": 512
+    },
+    {
+      "prompt": "A panda drinking coffee in a cafe in Paris, watercolor painting",
+      "dims": [
+        "appearance_style"
+      ],
+      "video": "A panda drinking coffee in a cafe in Paris, watercolor painting-0.mp4",
+      "prompt_id": "p0527-2a5aeff29728",
+      "source_index": 527
+    },
+    {
+      "prompt": "Gwen Stacy reading a book, Van Gogh style",
+      "dims": [
+        "appearance_style"
+      ],
+      "video": "Gwen Stacy reading a book, Van Gogh style-0.mp4",
+      "prompt_id": "p0538-12de2dd08ff0",
+      "source_index": 538
+    },
+    {
+      "prompt": "Gwen Stacy reading a book, black and white",
+      "dims": [
+        "appearance_style"
+      ],
+      "video": "Gwen Stacy reading a book, black and white-0.mp4",
+      "prompt_id": "p0541-adec3b130ea1",
+      "source_index": 541
+    },
+    {
+      "prompt": "A beautiful coastal beach in spring, waves lapping on sand, pan right",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "A beautiful coastal beach in spring, waves lapping on sand, pan right-0.mp4",
+      "prompt_id": "p0587-3730fde8488a",
+      "source_index": 587
+    },
+    {
+      "prompt": "a shark is swimming in the ocean, zoom in",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "a shark is swimming in the ocean, zoom in-0.mp4",
+      "prompt_id": "p0604-584c515591f4",
+      "source_index": 604
+    },
+    {
+      "prompt": "A cute happy Corgi playing in park, sunset, zoom in",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "A cute happy Corgi playing in park, sunset, zoom in-0.mp4",
+      "prompt_id": "p0624-f25c52cb4a5c",
+      "source_index": 624
+    },
+    {
+      "prompt": "Gwen Stacy reading a book, zoom in",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "Gwen Stacy reading a book, zoom in-0.mp4",
+      "prompt_id": "p0634-f7128ce4b37d",
+      "source_index": 634
+    },
+    {
+      "prompt": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, featuring a steady and smooth perspective",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "A couple in formal evening wear going home get caught in a heavy downpour with umbrellas, featuring a steady and smooth perspective-0.mp4",
+      "prompt_id": "p0661-ae8877b268d2",
+      "source_index": 661
+    },
+    {
+      "prompt": "An astronaut flying in space, featuring a steady and smooth perspective",
+      "dims": [
+        "temporal_style"
+      ],
+      "video": "An astronaut flying in space, featuring a steady and smooth perspective-0.mp4",
+      "prompt_id": "p0671-f40747a1a8d1",
+      "source_index": 671
+    },
+    {
+      "prompt": "A koala bear playing piano in the forest.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A koala bear playing piano in the forest.-0.mp4",
+      "prompt_id": "p0691-9e1d6f1e071b",
+      "source_index": 691
+    },
+    {
+      "prompt": "A bigfoot walking in the snowstorm.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A bigfoot walking in the snowstorm.-0.mp4",
+      "prompt_id": "p0696-f376ee1ca5c2",
+      "source_index": 696
+    },
+    {
+      "prompt": "a shark is swimming in the ocean.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "a shark is swimming in the ocean.-0.mp4",
+      "prompt_id": "p0703-c38c96c54721",
+      "source_index": 703
+    },
+    {
+      "prompt": "a teddy bear is swimming in the ocean.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "a teddy bear is swimming in the ocean.-0.mp4",
+      "prompt_id": "p0705-16b78f564aaf",
+      "source_index": 705
+    },
+    {
+      "prompt": "golden fish swimming in the ocean.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "golden fish swimming in the ocean.-0.mp4",
+      "prompt_id": "p0707-a6dd12f959cf",
+      "source_index": 707
+    },
+    {
+      "prompt": "happy dog wearing a yellow turtleneck, studio, portrait, facing camera, dark background",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "happy dog wearing a yellow turtleneck, studio, portrait, facing camera, dark background-0.mp4",
+      "prompt_id": "p0710-0426656f4768",
+      "source_index": 710
+    },
+    {
+      "prompt": "Pacific coast, carmel by the sea ocean and waves.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "Pacific coast, carmel by the sea ocean and waves.-0.mp4",
+      "prompt_id": "p0727-a0e3924c83db",
+      "source_index": 727
+    },
+    {
+      "prompt": "A raccoon is playing the electronic guitar.",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A raccoon is playing the electronic guitar.-0.mp4",
+      "prompt_id": "p0731-ad27417f9e17",
+      "source_index": 731
+    },
+    {
+      "prompt": "A jellyfish floating through the ocean, with bioluminescent tentacles",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A jellyfish floating through the ocean, with bioluminescent tentacles-0.mp4",
+      "prompt_id": "p0736-d4971e831c69",
+      "source_index": 736
+    },
+    {
+      "prompt": "Gwen Stacy reading a book",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "Gwen Stacy reading a book-0.mp4",
+      "prompt_id": "p0744-054d64d4169a",
+      "source_index": 744
+    },
+    {
+      "prompt": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A boat sailing leisurely along the Seine River with the Eiffel Tower in background-0.mp4",
+      "prompt_id": "p0748-fb77a15b0930",
+      "source_index": 748
+    },
+    {
+      "prompt": "A panda cooking in the kitchen",
+      "dims": [
+        "aesthetic_quality",
+        "imaging_quality",
+        "overall_consistency"
+      ],
+      "video": "A panda cooking in the kitchen-0.mp4",
+      "prompt_id": "p0759-2fa35850d017",
+      "source_index": 759
+    },
+    {
+      "prompt": "bathroom",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "bathroom-0.mp4",
+      "prompt_id": "p0779-3486577cd905",
+      "source_index": 779
+    },
+    {
+      "prompt": "football field",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "football field-0.mp4",
+      "prompt_id": "p0806-aeaab0431f98",
+      "source_index": 806
+    },
+    {
+      "prompt": "golf course",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "golf course-0.mp4",
+      "prompt_id": "p0811-1947f124d15f",
+      "source_index": 811
+    },
+    {
+      "prompt": "harbor",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "harbor-0.mp4",
+      "prompt_id": "p0813-c1d64b2d4cb3",
+      "source_index": 813
+    },
+    {
+      "prompt": "hospital",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "hospital-0.mp4",
+      "prompt_id": "p0815-8afe3c83decf",
+      "source_index": 815
+    },
+    {
+      "prompt": "house",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "house-0.mp4",
+      "prompt_id": "p0816-d6e21286621a",
+      "source_index": 816
+    },
+    {
+      "prompt": "mansion",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "mansion-0.mp4",
+      "prompt_id": "p0825-30de4f96dcff",
+      "source_index": 825
+    },
+    {
+      "prompt": "parking lot",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "parking lot-0.mp4",
+      "prompt_id": "p0835-847fd46115c9",
+      "source_index": 835
+    },
+    {
+      "prompt": "shower",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "shower-0.mp4",
+      "prompt_id": "p0842-528159b45697",
+      "source_index": 842
+    },
+    {
+      "prompt": "baseball stadium",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "baseball stadium-0.mp4",
+      "prompt_id": "p0846-e43cd107d713",
+      "source_index": 846
+    },
+    {
+      "prompt": "tower",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "tower-0.mp4",
+      "prompt_id": "p0851-ad2015263f33",
+      "source_index": 851
+    },
+    {
+      "prompt": "underwater coral reef",
+      "dims": [
+        "background_consistency",
+        "scene"
+      ],
+      "video": "underwater coral reef-0.mp4",
+      "prompt_id": "p0855-6da378d9ceda",
+      "source_index": 855
+    },
+    {
+      "prompt": "a fire hydrant on the right of a stop sign, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a fire hydrant on the right of a stop sign, front view-0.mp4",
+      "prompt_id": "p0865-f09d5b9a286d",
+      "source_index": 865
+    },
+    {
+      "prompt": "a bird on the left of a cat, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a bird on the left of a cat, front view-0.mp4",
+      "prompt_id": "p0870-a9acc1ded685",
+      "source_index": 870
+    },
+    {
+      "prompt": "a bowl on the left of a bottle, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a bowl on the left of a bottle, front view-0.mp4",
+      "prompt_id": "p0886-24b0ba657795",
+      "source_index": 886
+    },
+    {
+      "prompt": "a tv on the right of a dining table, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a tv on the right of a dining table, front view-0.mp4",
+      "prompt_id": "p0905-305f17261d04",
+      "source_index": 905
+    },
+    {
+      "prompt": "a dining table on the left of a chair, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a dining table on the left of a chair, front view-0.mp4",
+      "prompt_id": "p0906-21a3b5688b4e",
+      "source_index": 906
+    },
+    {
+      "prompt": "a boat on the left of an airplane, front view",
+      "dims": [
+        "spatial_relationship"
+      ],
+      "video": "a boat on the left of an airplane, front view-0.mp4",
+      "prompt_id": "p0909-c6b4ecc992e2",
+      "source_index": 909
+    }
+  ],
+  "source": {
+    "path": "/data/wangyuqi_intern26/ssf_runs/phaseF_reader_credit_20261023_143148/contracts/panel.json",
+    "sha256": "d6de96033e031d7c924192d9d10601b1f7efa8b87ad346efacd908225b109ed1"
+  },
+  "selection": "unchanged frozen membership; no outcome-based reselection"
+}

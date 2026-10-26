@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-10-26T10:35:50.929632+08:00",
+  "panels": [
+    {
+      "file": "phaseG48.json",
+      "sha256": "3181513f21c10234e5faf11cc36cb9d472658c1b0a04fdd44cb52e0432cdad47",
+      "prompts": 48,
+      "source": {
+        "path": "/data/wangyuqi_intern26/ssf_runs/cluster_handoff_20261025_200128/repository/cluster/original_run/contracts/evaluation_manifest.json",
+        "sha256": "b7d0c0fb2355004f39302cefe1f64026fd932c7e3461f0811f3c8011c7fe51ef"
+      },
+      "text_file": "phaseG48.txt",
+      "text_sha256": "1a9693ef8370fcfb2343ec586c8cf905551cf9ef5db53c8c7ee3cbf759796ac4"
+    },
+    {
+      "file": "phaseCD96.json",
+      "sha256": "5daf8462a4039ef8c8c053b1d056454efd6d729fdd5929c9a9d43b91aedd7b75",
+      "prompts": 96,
+      "source": {
+        "path": "/data/wangyuqi_intern26/ssf_runs/phaseF_reader_credit_20261023_143148/contracts/panel.json",
+        "sha256": "d6de96033e031d7c924192d9d10601b1f7efa8b87ad346efacd908225b109ed1"
+      },
+      "text_file": "phaseCD96.txt",
+      "text_sha256": "3f98f2a87696003fbe67e572dc2cb0c5ba3cf5e784c8461bb09c8804ca1df24f"
+    },
+    {
+      "file": "official944.json",
+      "sha256": "b9bbe7120c19d7fa407a90f5de2667e238891f10a1f2b96575dc8080f4271145",
+      "prompts": 944,
+      "source": {
+        "path": "/data/wangyuqi_intern26/ssf_runs/vbench_full_5s_20261011_160228/prompt_suite.json",
+        "sha256": "257dcdc2b0ad6b46543ef291533443b43b0dc28c044cfeb1dbf3512dc8ec5fe3"
+      },
+      "text_file": "official944.txt",
+      "text_sha256": "d802b4830e9ea85550e5fad2e9f077d74f79fcfad60d0b56b1314a0f5b652dc8"
+    }
+  ],
+  "contract_sha256": "3a7fb1c16caf4450c45ba5f1e83f2a1679938fbf46497a66d7b60ed8a411ba19",
+  "official_metadata_sha256": "5dd2de80ee43cda750b2b72ea7023657c0b90d3702041c7e4608c65dbe50dccd"
+}

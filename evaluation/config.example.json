@@ -1,0 +1,39 @@
+{
+  "panel": "data/phaseG48.json",
+  "video_root": "/REPLACE/lossless_videos",
+  "output": "/REPLACE/ssf_eval_results",
+  "video_pattern": "{arm}/{seed}/{prompt_id}.mp4",
+  "record_pattern": "{arm}/{seed}/{prompt_id}.json",
+  "require_generation_records": true,
+  "seeds": [
+    2026,
+    2027
+  ],
+  "dimensions": [
+    "subject_consistency",
+    "background_consistency",
+    "object_class",
+    "multiple_objects",
+    "human_action",
+    "dynamic_degree",
+    "motion_smoothness",
+    "imaging_quality",
+    "overall_consistency"
+  ],
+  "arms": [
+    {
+      "name": "baseline",
+      "weight_kind": "EMA",
+      "checkpoint_sha256": null
+    },
+    {
+      "name": "ssf",
+      "weight_kind": "EMA",
+      "checkpoint_sha256": null
+    }
+  ],
+  "metric_python": "/REPLACE/vbench_env/bin/python",
+  "vbench_cache": "/REPLACE/vbench_cache",
+  "bootstrap_resamples": 10000,
+  "win_tie_tolerance": 1e-08
+}
