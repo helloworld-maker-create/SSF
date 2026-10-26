@@ -1,0 +1,109 @@
+{
+  "observed_at": "2026-10-26T23:25:05.105243+08:00",
+  "run_id": "20261026_131447_9d70a298",
+  "source_code_commit": "99ef714ea2572ec8c666b8bf2d19c780fe2c6a7f",
+  "raw_sources": [
+    {
+      "rank": 0,
+      "source": "training/baseline/attempt_00/rank0/updates.jsonl",
+      "accepted_records": 156,
+      "uncompressed_bytes": 216305,
+      "uncompressed_sha256": "24f67f4ece3888a6268ca676e2ebda54a5df7934651b0ec6ba9cd43fdafda71c",
+      "artifact": "raw/updates_rank0.jsonl.gz",
+      "artifact_bytes": 29317,
+      "artifact_sha256": "bb2b71b72968f56223158632ae437f790ee2b4741a7ff33aac746effbc63ec90"
+    },
+    {
+      "rank": 1,
+      "source": "training/baseline/attempt_00/rank1/updates.jsonl",
+      "accepted_records": 156,
+      "uncompressed_bytes": 216373,
+      "uncompressed_sha256": "59b8291a601b330adc7c160c0bbd379811aebf6355a5c530b14c84e48bcdfdc9",
+      "artifact": "raw/updates_rank1.jsonl.gz",
+      "artifact_bytes": 29356,
+      "artifact_sha256": "564e75200bfa72665fcb67cf0bd9d815b162f63547eebd19ca188110b20c0c27"
+    },
+    {
+      "rank": 2,
+      "source": "training/baseline/attempt_00/rank2/updates.jsonl",
+      "accepted_records": 156,
+      "uncompressed_bytes": 216387,
+      "uncompressed_sha256": "9b5038ff2d149a0cb563a7fad49b11c65baf5d73f036f5de11ef76c212ad6144",
+      "artifact": "raw/updates_rank2.jsonl.gz",
+      "artifact_bytes": 29263,
+      "artifact_sha256": "9876489a4b11aa2e22178840653c9826c8365c139e8a5096b746c1596f6cad4e"
+    },
+    {
+      "rank": 3,
+      "source": "training/baseline/attempt_00/rank3/updates.jsonl",
+      "accepted_records": 156,
+      "uncompressed_bytes": 216346,
+      "uncompressed_sha256": "0c65911c7ba6d1109d8ffd14438343ad493e09b41ba3444c1ed4de42660fbed4",
+      "artifact": "raw/updates_rank3.jsonl.gz",
+      "artifact_bytes": 29347,
+      "artifact_sha256": "b5352fd9449256ca3cd18e2b01d88918eddb378bcbf69a4fccc3be9ce4ed8a9a"
+    }
+  ],
+  "files": [
+    {
+      "path": "raw/updates_rank0.jsonl.gz",
+      "bytes": 29317,
+      "sha256": "bb2b71b72968f56223158632ae437f790ee2b4741a7ff33aac746effbc63ec90"
+    },
+    {
+      "path": "raw/updates_rank1.jsonl.gz",
+      "bytes": 29356,
+      "sha256": "564e75200bfa72665fcb67cf0bd9d815b162f63547eebd19ca188110b20c0c27"
+    },
+    {
+      "path": "raw/updates_rank2.jsonl.gz",
+      "bytes": 29263,
+      "sha256": "9876489a4b11aa2e22178840653c9826c8365c139e8a5096b746c1596f6cad4e"
+    },
+    {
+      "path": "raw/updates_rank3.jsonl.gz",
+      "bytes": 29347,
+      "sha256": "b5352fd9449256ca3cd18e2b01d88918eddb378bcbf69a4fccc3be9ce4ed8a9a"
+    },
+    {
+      "path": "updates.csv",
+      "bytes": 80818,
+      "sha256": "066239b7c1328ea98e165aa41167c99f44b18e3f1efe42b15bc3a5c8cd63bbd2"
+    },
+    {
+      "path": "train_rank0_tail.log",
+      "bytes": 7033,
+      "sha256": "c503486c6079186a2ab8968d1911e23654dcdb152c75ceaf42ef4150fbbf2d07"
+    },
+    {
+      "path": "training_config.json",
+      "bytes": 2538,
+      "sha256": "05f91b62932e122201c128d658266fedf7f13fffe1a399c24f8deef89271009a"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 489,
+      "sha256": "5479f8df202bcdb0aeccf6d7285e5b5ce74c9a8b4459f3797c58136bdbee8f77"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 2770,
+      "sha256": "ed48a9a0089bd186193935f546944181ebb7fd3b561c4ba0fb0d74231b942cda"
+    },
+    {
+      "path": "plot_loss.py",
+      "bytes": 1284,
+      "sha256": "785168b07e9c415027b919b2d18589574cdd5efdc71a24b2f6767b65442b2efb"
+    },
+    {
+      "path": "loss.png",
+      "bytes": 195060,
+      "sha256": "439bedc10293042baaade0a32e6c6778a3e922964710a58a9c4fd37abc127183"
+    }
+  ],
+  "notes": [
+    "Raw gzip files preserve original JSONL bytes for the common completed-outer prefix.",
+    "Global losses repeat across four ranks and must not be counted as independent experiments.",
+    "No checkpoint tensor, dataset or generated video is included."
+  ]
+}

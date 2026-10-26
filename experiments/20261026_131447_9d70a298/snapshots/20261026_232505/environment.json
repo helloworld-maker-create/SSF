@@ -1,0 +1,22 @@
+{
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cu128",
+  "transformers": "4.51.3",
+  "diffusers": "0.37.0",
+  "accelerate": "1.0.1",
+  "flash_attn": "2.8.1",
+  "triton": "3.6.0",
+  "omegaconf": "2.3.0",
+  "numpy": "2.2.6",
+  "av": "17.0.1",
+  "safetensors": "0.6.2",
+  "einops": "0.8.1",
+  "sentencepiece": "0.2.0",
+  "lmdb": "2.2.0",
+  "imageio": "2.36.0",
+  "imageio-ffmpeg": "0.5.1",
+  "opencv-python": "4.10.0.84",
+  "wandb": "0.25.1",
+  "ftfy": "6.3.1",
+  "easydict": "1.13"
+}

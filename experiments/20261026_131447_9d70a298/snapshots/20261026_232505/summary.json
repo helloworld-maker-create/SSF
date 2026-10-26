@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "run_id": "20261026_131447_9d70a298",
+  "snapshot_id": "20261026_232505",
+  "observed_at": "2026-10-26T23:25:05.105243+08:00",
+  "source_code_commit": "99ef714ea2572ec8c666b8bf2d19c780fe2c6a7f",
+  "status": "RUNNING_INTERMEDIATE_SNAPSHOT",
+  "arm": "baseline",
+  "node": "zkln-h100-0009",
+  "gpu_model": "NVIDIA H100 80GB HBM3",
+  "world_size": 4,
+  "microbatch_per_rank": 1,
+  "accumulation_per_rank": 16,
+  "effective_batch_G": 64,
+  "effective_batch_C": 64,
+  "target_outer": 600,
+  "counts": {
+    "outer": 130,
+    "G": 26,
+    "C": 130,
+    "EMA_initialized": false,
+    "EMA_updates": 0
+  },
+  "progress_percent": 21.666666666666668,
+  "accepted_updates_per_rank": 156,
+  "total_accepted_global_samples": 9984,
+  "rank_consistent": true,
+  "all_published_losses_and_norms_finite": true,
+  "accumulator_full_precision": true,
+  "losses": {
+    "G": {
+      "updates": 26,
+      "first": 0.19033296137828845,
+      "latest": 0.2318133251276493,
+      "minimum": 0.1340145091326302,
+      "maximum": 0.23470038880975475,
+      "mean": 0.18305122325955847,
+      "first_10_mean": 0.19660280570633568,
+      "last_10_mean": 0.17647695982854442,
+      "mean_update_seconds": 381.70126080513
+    },
+    "C": {
+      "updates": 130,
+      "first": 0.11032485961914062,
+      "latest": 0.1363525390625,
+      "minimum": 0.07103347778320312,
+      "maximum": 0.24287033081054688,
+      "mean": 0.15022776677058294,
+      "first_10_mean": 0.10122699737548828,
+      "last_10_mean": 0.15020761489868165,
+      "mean_update_seconds": 199.47370691299437
+    }
+  },
+  "checkpoint_count": 0,
+  "checkpoints": [],
+  "generated_video_count": 0,
+  "evaluation_metrics": null,
+  "SSF_started": false,
+  "wall_limit_hours": 24,
+  "observed_elapsed_hours": 10.168292384611236,
+  "linear_projection_full_training_hours": 46.93058023666725,
+  "projection_excludes_future_checkpoint_and_video_cost": true,
+  "traceback_found": false,
+  "workers": [
+    {
+      "rank": 0,
+      "pid": 2616032,
+      "alive": true,
+      "finished": null
+    },
+    {
+      "rank": 1,
+      "pid": 2616036,
+      "alive": true,
+      "finished": null
+    },
+    {
+      "rank": 2,
+      "pid": 2616038,
+      "alive": true,
+      "finished": null
+    },
+    {
+      "rank": 3,
+      "pid": 2616040,
+      "alive": true,
+      "finished": null
+    }
+  ],
+  "rank_observed_update_counts": [
+    157,
+    157,
+    157,
+    157
+  ],
+  "snapshot_cut": "Common accepted prefix through the last completed outer (critic update); later in-flight work is excluded.",
+  "qualification_required": false,
+  "native_qualification_ran": false,
+  "source_run_fingerprint": "b7de898710e9e395c687baabb5b51fa913a56f05b54046a7d0070e4dce431388",
+  "start_time": "2026-10-26T13:14:59.252658+08:00"
+}
